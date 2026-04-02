@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="nl"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kidsclub - Beeks Zien en Horen</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-fixed-dim": "#dbc2ab",
+              "on-secondary": "#452b02",
+              "tertiary": "#f0d8ff",
+              "secondary-fixed-dim": "#eabf88",
+              "secondary-container": "#614318",
+              "surface-tint": "#dbc2ab",
+              "on-primary-fixed-variant": "#554432",
+              "surface-container-low": "#1e1b1d",
+              "primary-fixed": "#f8dec6",
+              "on-tertiary-fixed": "#2d004f",
+              "outline": "#9a8f86",
+              "on-tertiary-fixed-variant": "#602d8c",
+              "tertiary-fixed-dim": "#e0b7ff",
+              "error": "#ffb4ab",
+              "on-surface-variant": "#d1c4ba",
+              "secondary-fixed": "#ffddb4",
+              "inverse-surface": "#e8e1e3",
+              "surface-dim": "#151314",
+              "surface-container": "#221f21",
+              "tertiary-fixed": "#f1daff",
+              "on-surface": "#e8e1e3",
+              "surface-container-lowest": "#100d0f",
+              "inverse-primary": "#6e5b48",
+              "on-primary": "#3d2d1d",
+              "surface-bright": "#3c383a",
+              "outline-variant": "#4e453e",
+              "on-tertiary": "#480f73",
+              "primary-container": "#d9c0a9",
+              "inverse-on-surface": "#332f31",
+              "on-tertiary-container": "#6c3897",
+              "on-error-container": "#ffdad6",
+              "on-secondary-fixed": "#291800",
+              "on-secondary-fixed-variant": "#5e4116",
+              "surface": "#151314",
+              "on-background": "#e8e1e3",
+              "on-secondary-container": "#dbb17c",
+              "on-primary-container": "#604e3c",
+              "on-error": "#690005",
+              "primary": "#f6dcc4",
+              "on-primary-fixed": "#26190a",
+              "surface-container-highest": "#373436",
+              "error-container": "#93000a",
+              "surface-container-high": "#2c292b",
+              "background": "#151314",
+              "secondary": "#eabf88",
+              "tertiary-container": "#deb4ff",
+              "surface-variant": "#373436"
+            },
+            fontFamily: {
+              "serif": ["Noto Serif"],
+              "sans": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            background: rgba(21, 19, 20, 0.7);
+            backdrop-filter: blur(20px);
+        }
+        .primary-gradient {
+            background: linear-gradient(135deg, #F6DCC4 0%, #D9C0A9 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-sans selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#151314]/70 backdrop-blur-xl">
+<div class="flex justify-between items-center px-12 py-6 w-full max-w-screen-2xl mx-auto">
+<a href="../index.html"><img src="../logo.png" alt="Beeks Zien en Horen" class="h-10"></a>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-serif text-lg tracking-tight text-[#F6DCC4] border-b-2 border-[#F6DCC4] pb-1" href="../zien.html">Zien</a>
+<a class="font-serif text-lg tracking-tight text-[#9A8F86] hover:text-[#F6DCC4] transition-colors" href="../horen.html">Horen</a>
+<a class="font-serif text-lg tracking-tight text-[#9A8F86] hover:text-[#F6DCC4] transition-colors" href="../index.html#historie">Over ons</a>
+<a class="font-serif text-lg tracking-tight text-[#9A8F86] hover:text-[#F6DCC4] transition-colors" href="#contact">Contact</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="hidden lg:block text-[#9A8F86] hover:text-[#F6DCC4] transition-colors text-sm font-label tracking-widest">NL/EN</button>
+<a href="mailto:info@beeks.nl?subject=Afspraak" class="primary-gradient text-on-primary px-6 py-2.5 rounded-lg font-label font-semibold text-sm scale-95 active:opacity-80 transition-transform">
+                    Afspraak Maken
+                </a>
+</div>
+</div>
+</nav>
+<main class="pt-32">
+<!-- Hero Section -->
+<section class="px-12 mb-28">
+<div class="max-w-screen-2xl mx-auto">
+<div class="max-w-3xl">
+<span class="text-tertiary font-label text-xs tracking-[0.3em] uppercase mb-4 block">Beeks Zien</span>
+<h1 class="font-serif text-7xl md:text-8xl leading-tight tracking-tight text-primary mb-8">
+                        <em>Beeks Kidsclub</em>
+                    </h1>
+<p class="font-sans text-lg text-outline max-w-xl leading-relaxed mb-10">
+                        Een kinderbril kiezen kan best een uitdaging zijn. Ga je voor een trendy montuur of een stevig sportframe? Gelukkig weten kinderen vaak precies wat ze mooi vinden.
+                    </p>
+</div>
+</div>
+</section>
+
+<!-- Kinderbrillen Section -->
+<section class="bg-surface-container-low py-28 px-12">
+<div class="max-w-screen-2xl mx-auto">
+<div class="max-w-3xl">
+<div class="flex items-center gap-3 mb-6">
+<div class="w-12 h-[1px] bg-primary"></div>
+<span class="text-xs tracking-widest uppercase text-primary">Kidsclub</span>
+</div>
+<h2 class="font-serif text-5xl text-primary mb-8">Kinderbrillen die tegen een stootje kunnen</h2>
+<p class="text-outline text-lg leading-relaxed mb-6">
+                        Kinderen gaan niet zo voorzichtig met hun bril om als volwassenen. Ze rennen, klimmen, spelen. Een bril van Beeks kan wel tegen een stootje. Maar soms raakt een sportmontuur toch verbogen of beschadigd.
+                    </p>
+<p class="text-outline text-lg leading-relaxed">
+                        Daarom hebben we de Beeks Kidsclub opgericht — voor extra service en zekerheid. Als lid van de Kidsclub krijgt uw kind extra aandacht en voordelen, zodat u zich geen zorgen hoeft te maken.
+                    </p>
+</div>
+</div>
+</section>
+
+<!-- Zelf een bril maken Section -->
+<section class="py-28 px-12">
+<div class="max-w-screen-2xl mx-auto">
+<div class="max-w-3xl">
+<div class="flex items-center gap-3 mb-6">
+<div class="w-12 h-[1px] bg-primary"></div>
+<span class="text-xs tracking-widest uppercase text-primary">Beleving</span>
+</div>
+<h2 class="font-serif text-5xl text-primary mb-8">Zelf een bril maken?</h2>
+<p class="text-outline text-lg leading-relaxed mb-6">
+                        Bij Beeks maken we de bril samen met u. Op afspraak mag uw kind samen met de opticien de eigen glazen slijpen. Dat maakt het kopen van een kinderbril nog leuker en persoonlijker.
+                    </p>
+<p class="text-outline text-lg leading-relaxed">
+                        Een unieke ervaring die kinderen niet snel vergeten — en het maakt het dragen van een bril een stuk spannender.
+                    </p>
+</div>
+</div>
+</section>
+
+<!-- Kijkproblemen Section -->
+<section class="bg-surface-container-low py-28 px-12">
+<div class="max-w-screen-2xl mx-auto">
+<div class="max-w-3xl">
+<div class="flex items-center gap-3 mb-6">
+<div class="w-12 h-[1px] bg-primary"></div>
+<span class="text-xs tracking-widest uppercase text-primary">Oogzorg</span>
+</div>
+<h2 class="font-serif text-5xl text-primary mb-8">Kijkproblemen bij kinderen</h2>
+<p class="text-outline text-lg leading-relaxed mb-6">
+                        Goed zien is ontzettend belangrijk voor kinderen. Meer dan 80% van alle informatie wordt via de ogen opgenomen. Scherp zien helpt bij leren, in het verkeer en bij sport.
+                    </p>
+<p class="text-outline text-lg leading-relaxed">
+                        Merkt u dat uw kind moeite heeft met zien? Dan is een gratis oogmeting bij Beeks een goed idee. Hoe eerder een kijkprobleem wordt ontdekt, hoe beter het behandeld kan worden.
+                    </p>
+</div>
+</div>
+</section>
+
+<!-- Jaarlijks oogonderzoek Section -->
+<section class="py-28 px-12">
+<div class="max-w-screen-2xl mx-auto">
+<div class="max-w-3xl">
+<div class="flex items-center gap-3 mb-6">
+<div class="w-12 h-[1px] bg-primary"></div>
+<span class="text-xs tracking-widest uppercase text-primary">Controle</span>
+</div>
+<h2 class="font-serif text-5xl text-primary mb-8">Waarom jaarlijks een oogonderzoek?</h2>
+<p class="text-outline text-lg leading-relaxed mb-10">
+                        De ogen van kinderen kunnen snel veranderen, vaak zonder dat zij het zelf merken. Daarom raden wij een jaarlijkse controle aan. Tijdens een oogmeting controleren wij:
+                    </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex items-start gap-4 bg-surface-container rounded-xl p-6 border border-outline-variant/5">
+<span class="material-symbols-outlined text-primary text-2xl mt-0.5">visibility</span>
+<div>
+<h3 class="font-serif text-lg text-primary mb-1">Bijziendheid</h3>
+<p class="text-outline text-sm leading-relaxed">Moeite met zien op afstand</p>
+</div>
+</div>
+<div class="flex items-start gap-4 bg-surface-container rounded-xl p-6 border border-outline-variant/5">
+<span class="material-symbols-outlined text-primary text-2xl mt-0.5">preview</span>
+<div>
+<h3 class="font-serif text-lg text-primary mb-1">Verziendheid</h3>
+<p class="text-outline text-sm leading-relaxed">Moeite met zien dichtbij</p>
+</div>
+</div>
+<div class="flex items-start gap-4 bg-surface-container rounded-xl p-6 border border-outline-variant/5">
+<span class="material-symbols-outlined text-primary text-2xl mt-0.5">blur_on</span>
+<div>
+<h3 class="font-serif text-lg text-primary mb-1">Astigmatisme</h3>
+<p class="text-outline text-sm leading-relaxed">Onregelmatig gevormde ooglens</p>
+</div>
+</div>
+<div class="flex items-start gap-4 bg-surface-container rounded-xl p-6 border border-outline-variant/5">
+<span class="material-symbols-outlined text-primary text-2xl mt-0.5">palette</span>
+<div>
+<h3 class="font-serif text-lg text-primary mb-1">Kleurwaarneming</h3>
+<p class="text-outline text-sm leading-relaxed">Herkenning van kleuren</p>
+</div>
+</div>
+<div class="flex items-start gap-4 bg-surface-container rounded-xl p-6 border border-outline-variant/5">
+<span class="material-symbols-outlined text-primary text-2xl mt-0.5">sync_alt</span>
+<div>
+<h3 class="font-serif text-lg text-primary mb-1">Oogsamenwerking</h3>
+<p class="text-outline text-sm leading-relaxed">Samenwerking tussen beide ogen</p>
+</div>
+</div>
+<div class="flex items-start gap-4 bg-surface-container rounded-xl p-6 border border-outline-variant/5">
+<span class="material-symbols-outlined text-primary text-2xl mt-0.5">view_in_ar</span>
+<div>
+<h3 class="font-serif text-lg text-primary mb-1">Dieptezicht en scherpstelling</h3>
+<p class="text-outline text-sm leading-relaxed">Ruimtelijk zien en focusvermogen</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Persoonlijk advies Section -->
+<section class="bg-surface-container-low py-28 px-12">
+<div class="max-w-screen-2xl mx-auto">
+<div class="max-w-3xl">
+<div class="flex items-center gap-3 mb-6">
+<div class="w-12 h-[1px] bg-primary"></div>
+<span class="text-xs tracking-widest uppercase text-primary">Advies</span>
+</div>
+<h2 class="font-serif text-5xl text-primary mb-8">Persoonlijk advies</h2>
+<p class="text-outline text-lg leading-relaxed mb-6">
+                        Is er een correctie nodig? Dan krijgt u persoonlijk advies van onze oogspecialist. Wij nemen de tijd om alles rustig uit te leggen en de beste oplossing te vinden voor uw kind.
+                    </p>
+<p class="text-outline text-lg leading-relaxed">
+                        Beeks heeft een eigen orthoptist in huis — u hoeft dus niet naar het ziekenhuis. Alles onder één dak, dichtbij en vertrouwd.
+                    </p>
+</div>
+</div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-28 px-12">
+<div class="max-w-screen-2xl mx-auto bg-surface-container-high rounded-xl p-16 text-center relative overflow-hidden">
+<div class="absolute -right-20 -bottom-20 w-64 h-64 border-[1px] border-primary/10 rounded-full"></div>
+<div class="absolute -right-10 -bottom-10 w-48 h-48 border-[1px] border-primary/20 rounded-full"></div>
+<div class="relative z-10">
+<h2 class="font-serif text-5xl text-primary mb-6">Maak een afspraak</h2>
+<p class="text-outline text-lg leading-relaxed mb-10 max-w-xl mx-auto">
+                        Maak een afspraak voor een oogmeting of kom een kinderbril uitzoeken. Wij helpen u en uw kind graag.
+                    </p>
+<a href="mailto:info@beeks.nl?subject=Afspraak%20Kidsclub" class="inline-block primary-gradient text-on-primary px-10 py-4 rounded-lg font-label font-bold shadow-xl">Afspraak maken</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer id="contact" class="w-full border-t border-[#4E453E]/20 bg-[#1E1B1D]">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 w-full max-w-screen-2xl mx-auto">
+<div class="flex flex-col gap-6">
+<div class="font-serif text-xl text-[#F6DCC4]">Beeks Zien en Horen</div>
+<p class="font-sans text-sm leading-relaxed text-[#9A8F86]">
+                    Uw partner in hoogwaardige oog- en hoorzorg. Wij combineren passie met precisie.
+                </p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-[#D9C0A9] cursor-pointer hover:text-[#F6DCC4]">social_leaderboard</span>
+<span class="material-symbols-outlined text-[#D9C0A9] cursor-pointer hover:text-[#F6DCC4]">camera</span>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-serif text-lg text-[#F6DCC4] mb-2">Service</h4>
+<a class="font-sans text-sm leading-relaxed text-[#9A8F86] hover:text-[#F6DCC4] transition-colors" href="#contact">Locaties</a>
+<a class="font-sans text-sm leading-relaxed text-[#9A8F86] hover:text-[#F6DCC4] transition-colors" href="#contact">Openingstijden</a>
+<a class="font-sans text-sm leading-relaxed text-[#9A8F86] hover:text-[#F6DCC4] transition-colors" href="../zien.html">Zien</a>
+<a class="font-sans text-sm leading-relaxed text-[#9A8F86] hover:text-[#F6DCC4] transition-colors" href="../horen.html">Horen</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-serif text-lg text-[#F6DCC4] mb-2">Locatie</h4>
+<p class="font-sans text-sm leading-relaxed text-[#9A8F86]">
+                    Hoofdstraat 124<br/>
+                    2181 EH Hillegom
+                </p>
+<p class="font-sans text-sm leading-relaxed text-[#9A8F86]">
+                    T: 0252 516 642<br/>
+                    E: info@beeks.nl
+                </p>
+</div>
+<div class="flex flex-col gap-6">
+<h4 class="font-serif text-lg text-[#F6DCC4] mb-2">Nieuwsbrief</h4>
+<div class="relative">
+<input class="w-full bg-[#373436] border-none border-b border-[#4E453E]/50 focus:border-[#F6DCC4] focus:ring-0 text-white placeholder-[#9A8F86] pb-2 px-0" placeholder="E-mail adres" type="email"/>
+<button class="absolute right-0 bottom-2">
+<span class="material-symbols-outlined text-[#F6DCC4]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="px-12 py-8 border-t border-[#4E453E]/10 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-sans text-xs text-[#9A8F86]">&copy; 2024 Beeks Zien en Horen. All rights reserved.</p>
+<div class="flex gap-8">
+<span class="text-[10px] text-[#9A8F86] uppercase tracking-widest">Algemene Voorwaarden</span>
+<span class="text-[10px] text-[#9A8F86] uppercase tracking-widest">Cookies</span>
+</div>
+</div>
+</footer>
+</body></html>

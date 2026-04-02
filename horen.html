@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="nl"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-fixed-dim": "#dbc2ab",
+              "on-secondary": "#452b02",
+              "tertiary": "#f0d8ff",
+              "secondary-fixed-dim": "#eabf88",
+              "secondary-container": "#614318",
+              "surface-tint": "#dbc2ab",
+              "on-primary-fixed-variant": "#554432",
+              "surface-container-low": "#1e1b1d",
+              "primary-fixed": "#f8dec6",
+              "on-tertiary-fixed": "#2d004f",
+              "outline": "#9a8f86",
+              "on-tertiary-fixed-variant": "#602d8c",
+              "tertiary-fixed-dim": "#e0b7ff",
+              "error": "#ffb4ab",
+              "on-surface-variant": "#d1c4ba",
+              "secondary-fixed": "#ffddb4",
+              "inverse-surface": "#e8e1e3",
+              "surface-dim": "#151314",
+              "surface-container": "#221f21",
+              "tertiary-fixed": "#f1daff",
+              "on-surface": "#e8e1e3",
+              "surface-container-lowest": "#100d0f",
+              "inverse-primary": "#6e5b48",
+              "on-primary": "#3d2d1d",
+              "surface-bright": "#3c383a",
+              "outline-variant": "#4e453e",
+              "on-tertiary": "#480f73",
+              "primary-container": "#d9c0a9",
+              "inverse-on-surface": "#332f31",
+              "on-tertiary-container": "#6c3897",
+              "on-error-container": "#ffdad6",
+              "on-secondary-fixed": "#291800",
+              "on-secondary-fixed-variant": "#5e4116",
+              "surface": "#151314",
+              "on-background": "#e8e1e3",
+              "on-secondary-container": "#dbb17c",
+              "on-primary-container": "#604e3c",
+              "on-error": "#690005",
+              "primary": "#f6dcc4",
+              "on-primary-fixed": "#26190a",
+              "surface-container-highest": "#373436",
+              "error-container": "#93000a",
+              "surface-container-high": "#2c292b",
+              "background": "#151314",
+              "secondary": "#eabf88",
+              "tertiary-container": "#deb4ff",
+              "surface-variant": "#373436"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      }
+      .bg-primary-gradient {
+        background: linear-gradient(135deg, #f6dcc4 0%, #d9c0a9 100%);
+      }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary/30">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#151314]/70 backdrop-blur-xl">
+<div class="flex justify-between items-center px-12 py-6 w-full max-w-screen-2xl mx-auto">
+<a href="index.html"><img src="logo.png" alt="Beeks Zien en Horen" class="h-10"></a>
+<div class="hidden md:flex items-center space-x-8 font-serif text-lg tracking-tight">
+<a class="text-[#9A8F86] hover:text-[#F6DCC4] transition-colors" href="zien.html">Zien</a>
+<a class="text-[#F6DCC4] border-b-2 border-[#F6DCC4] pb-1" href="horen.html">Horen</a>
+<a class="text-[#9A8F86] hover:text-[#F6DCC4] transition-colors" href="index.html#historie">Over ons</a>
+<a class="text-[#9A8F86] hover:text-[#F6DCC4] transition-colors" href="#contact">Contact</a>
+</div>
+<div class="flex items-center space-x-6">
+<button class="text-[#9A8F86] hover:text-[#F6DCC4] transition-colors text-sm uppercase tracking-widest font-medium">NL/EN</button>
+<a href="mailto:info@beeks.nl?subject=Afspraak%20Gehoor" class="bg-primary-gradient text-on-primary px-6 py-2.5 rounded-md font-medium text-sm transition-transform scale-95 active:opacity-80">
+                    Afspraak Maken
+                </a>
+</div>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section: Personal Attention -->
+<section class="relative min-h-[870px] flex items-center px-12 py-24 bg-surface overflow-hidden">
+<div class="max-w-screen-2xl mx-auto w-full grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-6 z-10">
+<span class="text-tertiary font-label text-xs uppercase tracking-[0.2em] mb-4 block">Gehoorzorg op Maat</span>
+<h1 class="text-6xl md:text-8xl font-headline text-primary leading-[1.1] mb-8 tracking-tighter italic">
+                        De kunst van het luisteren.
+                    </h1>
+<p class="text-on-surface-variant text-lg md:text-xl max-w-lg leading-relaxed mb-12">
+                        Bij Beeks combineren we technische precisie met een menselijke benadering. Omdat uw gehoor even uniek is als uw vingerafdruk.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-6">
+<a href="mailto:info@beeks.nl?subject=Afspraak%20Gehoortest" class="bg-primary-gradient text-on-primary px-8 py-4 rounded-md font-medium text-base shadow-xl">
+                            Maak een afspraak voor een gehoortest
+                        </a>
+<a href="#werkwijze" class="flex items-center gap-3 text-primary border-b border-primary/30 pb-1 hover:border-primary transition-all">
+                            Bekijk onze werkwijze
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="md:col-span-6 relative h-[600px] w-full">
+<div class="absolute inset-0 bg-surface-container-high rounded-xl overflow-hidden shadow-2xl">
+<img alt="Hearing specialist" class="w-full h-full object-cover grayscale-[20%] opacity-80" data-alt="Close-up of a professional hearing specialist in a warm sunlit office calmly talking to an elderly client with empathy and focus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjy-6MZOKLj86L2NJsStnPlmKB5N_Wt3m69KQwL452a-qVfeFzdeeEfTfswzj8ALbDa9tsnjauin0PJjwBNfqXgUqRuv80nqKtnXWttLD5TvuBBvqVHVw5uXntZuhjaG50VCfXa9SF5U-UhKSFIKf-HTl3zJaMZV7n5e6JrMbcQYnTjtBk1v7QF_2tEUonF-frYIyrPK7aezc2roj9O8E8I2mgv7_FdWUB72g-UbnXJF8h3RS5TFJhxGVJW3oJlqFxbwlUcyExm5s"/>
+</div>
+<div class="absolute -bottom-8 -left-8 p-8 bg-surface-container-low/90 backdrop-blur-xl border border-outline-variant/20 rounded-xl max-w-xs shadow-2xl hidden lg:block">
+<p class="font-headline text-2xl text-primary italic mb-2">Persoonlijke aandacht</p>
+<p class="text-on-surface-variant text-sm leading-relaxed">Wij nemen de tijd om niet alleen uw gehoor, maar ook uw levensstijl te begrijpen.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Categories: Private vs Care -->
+<section class="py-32 px-12 bg-surface-container-low">
+<div class="max-w-screen-2xl mx-auto">
+<div class="text-center mb-20">
+<h2 class="text-4xl md:text-5xl font-headline text-on-surface mb-6 italic">Kies de oplossing die bij u past</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">In de wereld van hoortechnologie zijn er twee hoofdpaden. Wij begeleiden u bij het maken van de juiste keuze voor uw situatie.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Private Hearing Aids -->
+<div class="group p-10 bg-surface-container border border-outline-variant/10 rounded-xl hover:bg-surface-container-high transition-all duration-500">
+<div class="mb-8 flex justify-between items-start">
+<div class="h-16 w-16 bg-primary/10 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl">hearing</span>
+</div>
+<span class="text-primary-fixed-dim font-label text-[10px] uppercase tracking-widest bg-primary/5 px-3 py-1 rounded-full border border-primary/10">Premium</span>
+</div>
+<h3 class="text-3xl font-headline text-primary mb-6 italic">Wat zijn privaat hoortoestellen?</h3>
+<p class="text-on-surface-variant leading-relaxed mb-8">
+                            Privaat hoortoestellen bieden de allernieuwste technologieën zonder beperkingen van zorgverzekeraars. Ideaal voor wie maximale geluidskwaliteit, AI-ondersteuning en onzichtbaar design wenst.
+                        </p>
+<ul class="space-y-4 mb-10 text-on-surface/80">
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Geavanceerde ruisonderdrukking</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Directe streaming van alle apparaten</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Maatwerk in design en comfort</li>
+</ul>
+<a href="mailto:info@beeks.nl?subject=Informatie%20Privaat%20Hoortoestellen" class="block w-full py-4 border border-outline/30 text-on-surface hover:bg-surface-bright transition-colors rounded-md font-medium uppercase text-xs tracking-widest text-center">
+                            Ontdek de mogelijkheden
+                        </a>
+</div>
+<!-- Care Hearing Aids -->
+<div class="group p-10 bg-surface-container border border-outline-variant/10 rounded-xl hover:bg-surface-container-high transition-all duration-500">
+<div class="mb-8 flex justify-between items-start">
+<div class="h-16 w-16 bg-secondary/10 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-3xl">medical_services</span>
+</div>
+<span class="text-secondary-fixed-dim font-label text-[10px] uppercase tracking-widest bg-secondary/5 px-3 py-1 rounded-full border border-secondary/10">Zorgverzekering</span>
+</div>
+<h3 class="text-3xl font-headline text-secondary mb-6 italic">Wat zijn zorg hoortoestellen?</h3>
+<p class="text-on-surface-variant leading-relaxed mb-8">
+                            Zorg hoortoestellen vallen binnen de basisvergoeding van uw zorgverzekeraar. Deze toestellen worden geselecteerd op basis van uw gehoorverliescategorie en bieden bewezen betrouwbaarheid.
+                        </p>
+<ul class="space-y-4 mb-10 text-on-surface/80">
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary text-sm">verified</span> Volledige of gedeeltelijke vergoeding</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary text-sm">verified</span> Betrouwbare standaard technologie</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary text-sm">verified</span> Goedgekeurd door audiciens</li>
+</ul>
+<a href="mailto:info@beeks.nl?subject=Informatie%20Zorg%20Hoortoestellen" class="block w-full py-4 border border-outline/30 text-on-surface hover:bg-surface-bright transition-colors rounded-md font-medium uppercase text-xs tracking-widest text-center">
+                            Bekijk vergoedingen
+                        </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Hearing Assessment Section -->
+<section id="werkwijze" class="py-32 px-12 bg-surface">
+<div class="max-w-screen-2xl mx-auto flex flex-col md:flex-row gap-20 items-center">
+<div class="w-full md:w-1/2 relative">
+<div class="aspect-square bg-surface-container rounded-full overflow-hidden border-[16px] border-surface-container-low shadow-inner relative">
+<img alt="Diagnostic environment" class="w-full h-full object-cover mix-blend-luminosity hover:mix-blend-normal transition-all duration-700" data-alt="A clinical but cozy diagnostic room with modern silver hearing assessment equipment and soft ambient lighting on wooden surfaces" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDE4E9OOgPrAq3j-JcnwB1By6aZzLVaCv5_SCo0NN1oskWgwt115voYv5lgoTRNG429LVb82aXAvyn1aPY7OkhobqA37jpClu3V-h_ivLa3-BTdvaXDzUXANXfkgjFSAOTN0_JfAgeyE4L2TnMCzk90otkZ2Gd8Mn79VvBemvkCHb723CBOUV-MSBCmW0adEJ7lcfMrny8uZA7sS_wJqrbUgKFjjYzZreZrXdy4CHDxyr4JvvYCQ2Tn2fW2aflsh_O3vfk0EkchtgI"/>
+</div>
+<!-- Focal Point Signature Component -->
+<div class="absolute -top-10 -right-10 bg-surface/70 backdrop-blur-xl p-8 rounded-lg border border-outline-variant/20 max-w-[240px] shadow-2xl">
+<span class="material-symbols-outlined text-tertiary mb-4" style="font-variation-settings: 'FILL' 1;">graphic_eq</span>
+<h4 class="text-primary font-headline italic text-xl mb-2">Acoustic Shield</h4>
+<p class="text-xs text-on-surface-variant">Onze geavanceerde testcabines filteren elk omgevingsgeluid voor 100% zuivere resultaten.</p>
+</div>
+</div>
+<div class="w-full md:w-1/2">
+<h2 class="text-4xl md:text-5xl font-headline text-on-surface mb-8 italic">Professionele gehooranalyse</h2>
+<div class="space-y-8">
+<div class="flex gap-6">
+<div class="flex-shrink-0 text-primary font-headline text-3xl opacity-30">01</div>
+<div>
+<h4 class="text-xl font-medium mb-2">Intake Gesprek</h4>
+<p class="text-on-surface-variant leading-relaxed">We bespreken uw dagelijkse routine en de situaties waarin u hinder ervaart van uw gehoor.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 text-primary font-headline text-3xl opacity-30">02</div>
+<div>
+<h4 class="text-xl font-medium mb-2">Objectieve Meting</h4>
+<p class="text-on-surface-variant leading-relaxed">Met de nieuwste audiologische apparatuur brengen we exact in kaart wat uw oren registreren.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 text-primary font-headline text-3xl opacity-30">03</div>
+<div>
+<h4 class="text-xl font-medium mb-2">Advies op Maat</h4>
+<p class="text-on-surface-variant leading-relaxed">Samen kijken we naar de resultaten en zoeken we de oplossing die past bij uw wensen en budget.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24 px-12">
+<div class="max-w-5xl mx-auto bg-surface-container-highest rounded-2xl overflow-hidden relative border border-outline-variant/10 shadow-2xl">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 blur-3xl -mr-32 -mt-32 rounded-full"></div>
+<div class="relative z-10 p-12 md:p-20 text-center">
+<h2 class="text-4xl md:text-6xl font-headline text-primary mb-8 italic">Klaar om weer voluit te horen?</h2>
+<p class="text-on-surface-variant text-lg mb-12 max-w-2xl mx-auto">Zet vandaag de eerste stap naar een helderder geluidswereld. Een gehoortest bij Beeks is vrijblijvend en altijd met persoonlijke aandacht.</p>
+<a href="mailto:info@beeks.nl?subject=Afspraak%20Gehoortest" class="inline-block bg-primary-gradient text-on-primary px-10 py-5 rounded-md font-medium text-lg hover:shadow-primary/20 hover:shadow-2xl transition-all">
+                        Maak een afspraak voor een gehoortest
+                    </a>
+<p class="mt-8 text-on-surface/40 text-sm">Of bel direct met een van onze specialisten: <span class="text-primary/70">0252 516 642</span></p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer id="contact" class="bg-[#1E1B1D] w-full border-t border-[#4E453E]/20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 w-full max-w-screen-2xl mx-auto">
+<div class="space-y-6">
+<div class="font-serif text-xl text-[#F6DCC4]">Beeks Zien en Horen</div>
+<p class="font-sans text-sm leading-relaxed text-[#9A8F86]">
+                    Uw partner in visuele en auditieve precisie. Ambachtelijk vakmanschap sinds 1988.
+                </p>
+<div class="flex space-x-4">
+<a class="text-[#9A8F86] hover:text-[#F6DCC4] transition-colors" href="#"><span class="material-symbols-outlined">social_leaderboard</span></a>
+<a class="text-[#9A8F86] hover:text-[#F6DCC4] transition-colors" href="#"><span class="material-symbols-outlined">photo_camera</span></a>
+</div>
+</div>
+<div class="space-y-6">
+<h4 class="text-[#F6DCC4] font-medium text-sm uppercase tracking-widest">Informatie</h4>
+<ul class="space-y-4 font-sans text-sm">
+<li><a class="text-[#9A8F86] hover:text-[#F6DCC4] transition-colors" href="#contact">Locaties</a></li>
+<li><a class="text-[#9A8F86] hover:text-[#F6DCC4] transition-colors" href="#contact">Openingstijden</a></li>
+<li><a class="text-[#9A8F86] hover:text-[#F6DCC4] transition-colors" href="zien.html">Zien</a></li>
+<li><a class="text-[#9A8F86] hover:text-[#F6DCC4] transition-colors" href="horen.html">Horen</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="text-[#F6DCC4] font-medium text-sm uppercase tracking-widest">Diensten</h4>
+<ul class="space-y-4 font-sans text-sm">
+<li><a class="text-[#9A8F86] hover:text-[#F6DCC4] transition-colors" href="zien.html">Oogmeting</a></li>
+<li><a class="text-[#9A8F86] hover:text-[#F6DCC4] transition-colors" href="#werkwijze">Gehoortest</a></li>
+<li><a class="text-[#9A8F86] hover:text-[#F6DCC4] transition-colors" href="zien.html">Lensaanmeting</a></li>
+<li><a class="text-[#9A8F86] hover:text-[#F6DCC4] transition-colors" href="mailto:info@beeks.nl?subject=Hoortoestel%20Reparatie">Hoortoestel reparatie</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="text-[#F6DCC4] font-medium text-sm uppercase tracking-widest">Contact</h4>
+<p class="font-sans text-sm leading-relaxed text-[#9A8F86]">
+                    Hoofdstraat 124<br/>
+                    2181 EH Hillegom<br/>
+                    info@beeks.nl<br/>
+                    0252 516 642
+                </p>
+</div>
+</div>
+<div class="px-12 py-8 border-t border-[#4E453E]/10 flex flex-col md:flex-row justify-between items-center max-w-screen-2xl mx-auto">
+<p class="font-sans text-xs text-[#9A8F86]">© 2024 Beeks Zien en Horen. All rights reserved.</p>
+<p class="font-sans text-xs text-[#9A8F86] mt-4 md:mt-0 italic text-primary/40">Excellence in every detail.</p>
+</div>
+</footer>
+</body></html>

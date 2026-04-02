@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="nl"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Beeldschermbrillen | Beeks Zien en Horen</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-fixed-dim": "#dbc2ab",
+              "on-secondary": "#452b02",
+              "tertiary": "#f0d8ff",
+              "secondary-fixed-dim": "#eabf88",
+              "secondary-container": "#614318",
+              "surface-tint": "#dbc2ab",
+              "on-primary-fixed-variant": "#554432",
+              "surface-container-low": "#1e1b1d",
+              "primary-fixed": "#f8dec6",
+              "on-tertiary-fixed": "#2d004f",
+              "outline": "#9a8f86",
+              "on-tertiary-fixed-variant": "#602d8c",
+              "tertiary-fixed-dim": "#e0b7ff",
+              "error": "#ffb4ab",
+              "on-surface-variant": "#d1c4ba",
+              "secondary-fixed": "#ffddb4",
+              "inverse-surface": "#e8e1e3",
+              "surface-dim": "#151314",
+              "surface-container": "#221f21",
+              "tertiary-fixed": "#f1daff",
+              "on-surface": "#e8e1e3",
+              "surface-container-lowest": "#100d0f",
+              "inverse-primary": "#6e5b48",
+              "on-primary": "#3d2d1d",
+              "surface-bright": "#3c383a",
+              "outline-variant": "#4e453e",
+              "on-tertiary": "#480f73",
+              "primary-container": "#d9c0a9",
+              "inverse-on-surface": "#332f31",
+              "on-tertiary-container": "#6c3897",
+              "on-error-container": "#ffdad6",
+              "on-secondary-fixed": "#291800",
+              "on-secondary-fixed-variant": "#5e4116",
+              "surface": "#151314",
+              "on-background": "#e8e1e3",
+              "on-secondary-container": "#dbb17c",
+              "on-primary-container": "#604e3c",
+              "on-error": "#690005",
+              "primary": "#f6dcc4",
+              "on-primary-fixed": "#26190a",
+              "surface-container-highest": "#373436",
+              "error-container": "#93000a",
+              "surface-container-high": "#2c292b",
+              "background": "#151314",
+              "secondary": "#eabf88",
+              "tertiary-container": "#deb4ff",
+              "surface-variant": "#373436"
+            },
+            fontFamily: {
+              "serif": ["Noto Serif"],
+              "sans": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            background: rgba(21, 19, 20, 0.7);
+            backdrop-filter: blur(20px);
+        }
+        .primary-gradient {
+            background: linear-gradient(135deg, #F6DCC4 0%, #D9C0A9 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-sans selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#151314]/70 backdrop-blur-xl">
+<div class="flex justify-between items-center px-12 py-6 w-full max-w-screen-2xl mx-auto">
+<a href="../../index.html"><img src="../../logo.png" alt="Beeks Zien en Horen" class="h-10"></a>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-serif text-lg tracking-tight text-[#F6DCC4] border-b-2 border-[#F6DCC4] pb-1" href="../../zien.html">Zien</a>
+<a class="font-serif text-lg tracking-tight text-[#9A8F86] hover:text-[#F6DCC4] transition-colors" href="../../horen.html">Horen</a>
+<a class="font-serif text-lg tracking-tight text-[#9A8F86] hover:text-[#F6DCC4] transition-colors" href="../../index.html#historie">Over ons</a>
+<a class="font-serif text-lg tracking-tight text-[#9A8F86] hover:text-[#F6DCC4] transition-colors" href="#contact">Contact</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="hidden lg:block text-[#9A8F86] hover:text-[#F6DCC4] transition-colors text-sm font-label tracking-widest">NL/EN</button>
+<a href="mailto:info@beeks.nl?subject=Afspraak" class="primary-gradient text-on-primary px-6 py-2.5 rounded-lg font-label font-semibold text-sm scale-95 active:opacity-80 transition-transform">
+                    Afspraak Maken
+                </a>
+</div>
+</div>
+</nav>
+<main class="pt-32">
+<!-- Hero Section -->
+<section class="px-12 mb-28">
+<div class="max-w-screen-2xl mx-auto">
+<div class="max-w-3xl">
+<span class="text-tertiary font-label text-xs tracking-[0.3em] uppercase mb-4 block">Montuur Advies</span>
+<h1 class="font-serif text-7xl md:text-8xl leading-tight tracking-tight text-primary mb-8">
+                        Comfortabel en scherp zicht <em>op je werk</em>
+                    </h1>
+<p class="font-sans text-lg text-outline max-w-2xl leading-relaxed mb-10">
+                        Een beeldschermbril met Zeiss Officelens is speciaal ontworpen voor scherp zicht op verschillende werkafstanden. Minder nek- en schouderspanning, meer concentratie en productiviteit gedurende de hele werkdag.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Zeiss Officelens Distance Cards -->
+<section class="bg-surface-container-low py-28 px-12">
+<div class="max-w-screen-2xl mx-auto">
+<div class="mb-16">
+<div class="flex items-center gap-3 mb-6">
+<div class="w-12 h-[1px] bg-primary"></div>
+<span class="text-xs tracking-widest uppercase text-primary">Zeiss Officelens</span>
+</div>
+<h2 class="font-serif text-5xl text-primary">Drie afstanden, drie oplossingen</h2>
+<p class="text-on-surface-variant text-lg mt-6 max-w-2xl">Zeiss Officelens biedt drie varianten, elk geoptimaliseerd voor specifieke werkafstanden en taken.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- BOOK -->
+<div class="bg-surface-container rounded-xl p-12 border border-outline-variant/5 relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 primary-gradient"></div>
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-3xl text-primary">auto_stories</span>
+<span class="text-xs tracking-widest uppercase text-primary font-bold">Book</span>
+</div>
+<p class="text-4xl font-serif text-primary mb-2">30&ndash;100 cm</p>
+<p class="text-xs tracking-widest uppercase text-outline mb-6">Werkafstand</p>
+<h3 class="font-serif text-2xl text-on-surface mb-4">Lezen &amp; Laptop</h3>
+<p class="text-outline text-sm leading-relaxed">Ideaal voor wie voornamelijk leest of op een laptop werkt. Scherp zicht op korte afstand voor intensief leeswerk en nabijwerk.</p>
+</div>
+<!-- NEAR -->
+<div class="bg-surface-container rounded-xl p-12 border border-outline-variant/5 relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 primary-gradient"></div>
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-3xl text-primary">desktop_windows</span>
+<span class="text-xs tracking-widest uppercase text-primary font-bold">Near</span>
+</div>
+<p class="text-4xl font-serif text-primary mb-2">30&ndash;200 cm</p>
+<p class="text-xs tracking-widest uppercase text-outline mb-6">Werkafstand</p>
+<h3 class="font-serif text-2xl text-on-surface mb-4">Bureau &amp; Meerdere schermen</h3>
+<p class="text-outline text-sm leading-relaxed">Perfect voor bureauwerk met meerdere beeldschermen. Brede scherpte over uw volledige werkplek, van toetsenbord tot monitor.</p>
+</div>
+<!-- ROOM -->
+<div class="bg-surface-container rounded-xl p-12 border border-outline-variant/5 relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 primary-gradient"></div>
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-3xl text-primary">meeting_room</span>
+<span class="text-xs tracking-widest uppercase text-primary font-bold">Room</span>
+</div>
+<p class="text-4xl font-serif text-primary mb-2">30&ndash;400 cm</p>
+<p class="text-xs tracking-widest uppercase text-outline mb-6">Werkafstand</p>
+<h3 class="font-serif text-2xl text-on-surface mb-4">Bredere werkruimte</h3>
+<p class="text-outline text-sm leading-relaxed">Voor grotere werkruimtes waar u ook collega's en uw omgeving scherp wilt zien. Ideaal voor vergaderruimtes en open kantoren.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Section -->
+<section class="py-28 px-12">
+<div class="max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div>
+<div class="flex items-center gap-3 mb-6">
+<div class="w-12 h-[1px] bg-primary"></div>
+<span class="text-xs tracking-widest uppercase text-primary">Waarom</span>
+</div>
+<h2 class="font-serif text-5xl text-primary mb-6">Waarom een beeldschermbril belangrijk is</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+                        Iedereen die dagelijks meer dan 2 uur achter een beeldscherm werkt, zou een beeldschermbril moeten overwegen. Uw gewone bril of leesbril is niet geoptimaliseerd voor de specifieke afstanden van schermwerk.
+                    </p>
+<h3 class="font-serif text-2xl text-primary mb-4">Klachten zonder beeldschermbril</h3>
+<ul class="space-y-4">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-error mt-1">warning</span>
+<div>
+<p class="text-on-surface font-semibold text-sm">Vermoeide en brandende ogen</p>
+<p class="text-outline text-sm">Uw ogen werken overuren om scherp te stellen op beeldschermafstand.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-error mt-1">warning</span>
+<div>
+<p class="text-on-surface font-semibold text-sm">Hoofdpijn en nekpijn</p>
+<p class="text-outline text-sm">Verkeerde houding door onscherp zicht leidt tot spanning in nek en schouders.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-error mt-1">warning</span>
+<div>
+<p class="text-on-surface font-semibold text-sm">Afnemende scherpte gedurende de dag</p>
+<p class="text-outline text-sm">Uw ogen raken uitgeput, waardoor u aan het einde van de dag minder productief bent.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="bg-surface-container-high rounded-xl p-12 border border-outline-variant/5 relative overflow-hidden">
+<div class="absolute -right-20 -bottom-20 w-64 h-64 border-[1px] border-primary/10 rounded-full"></div>
+<div class="absolute -right-10 -bottom-10 w-48 h-48 border-[1px] border-primary/20 rounded-full"></div>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-5xl text-primary mb-6 block">gavel</span>
+<h3 class="font-serif text-3xl text-primary mb-4">Uw rechten: de ARBO-wet</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">
+                            Volgens de ARBO-wet heeft iedere beeldschermwerker recht op een oogonderzoek. Wanneer uit dit onderzoek blijkt dat een beeldschermbril noodzakelijk is, is uw werkgever verplicht deze te vergoeden.
+                        </p>
+<ul class="space-y-3">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container text-sm">check</span>
+<p class="text-on-surface text-sm">Recht op oogonderzoek voor beeldschermwerkers</p>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container text-sm">check</span>
+<p class="text-on-surface text-sm">Vergoeding beeldschermbril door werkgever</p>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container text-sm">check</span>
+<p class="text-on-surface text-sm">Periodieke hercontrole bij langdurig beeldschermwerk</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-28 bg-surface-container-highest">
+<div class="max-w-screen-md mx-auto text-center px-6">
+<h2 class="font-serif text-4xl text-primary mb-8 italic">Scherp zicht op uw werkplek</h2>
+<p class="text-on-surface-variant text-lg mb-12">Maak een afspraak voor een beeldschermglazen meting. Wij adviseren u over de beste Zeiss Officelens oplossing voor uw werksituatie.</p>
+<a href="mailto:info@beeks.nl?subject=Afspraak%20Beeldschermbril" class="inline-block primary-gradient text-on-primary px-12 py-5 rounded-lg font-label font-bold text-xl hover:scale-105 transition-transform">
+                    Afspraak Maken
+                </a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer id="contact" class="w-full border-t border-[#4E453E]/20 bg-[#1E1B1D]">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 w-full max-w-screen-2xl mx-auto">
+<div class="flex flex-col gap-6">
+<div class="font-serif text-xl text-[#F6DCC4]">Beeks Zien en Horen</div>
+<p class="font-sans text-sm leading-relaxed text-[#9A8F86]">
+                    Uw partner in hoogwaardige oog- en hoorzorg. Wij combineren passie met precisie.
+                </p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-[#D9C0A9] cursor-pointer hover:text-[#F6DCC4]">social_leaderboard</span>
+<span class="material-symbols-outlined text-[#D9C0A9] cursor-pointer hover:text-[#F6DCC4]">camera</span>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-serif text-lg text-[#F6DCC4] mb-2">Service</h4>
+<a class="font-sans text-sm leading-relaxed text-[#9A8F86] hover:text-[#F6DCC4] transition-colors" href="#contact">Locaties</a>
+<a class="font-sans text-sm leading-relaxed text-[#9A8F86] hover:text-[#F6DCC4] transition-colors" href="#contact">Openingstijden</a>
+<a class="font-sans text-sm leading-relaxed text-[#9A8F86] hover:text-[#F6DCC4] transition-colors" href="../../zien.html">Zien</a>
+<a class="font-sans text-sm leading-relaxed text-[#9A8F86] hover:text-[#F6DCC4] transition-colors" href="../../horen.html">Horen</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-serif text-lg text-[#F6DCC4] mb-2">Locatie</h4>
+<p class="font-sans text-sm leading-relaxed text-[#9A8F86]">
+                    Hoofdstraat 124<br/>
+                    2181 EH Hillegom
+                </p>
+<p class="font-sans text-sm leading-relaxed text-[#9A8F86]">
+                    T: 0252 516 642<br/>
+                    E: info@beeks.nl
+                </p>
+</div>
+<div class="flex flex-col gap-6">
+<h4 class="font-serif text-lg text-[#F6DCC4] mb-2">Nieuwsbrief</h4>
+<div class="relative">
+<input class="w-full bg-[#373436] border-none border-b border-[#4E453E]/50 focus:border-[#F6DCC4] focus:ring-0 text-white placeholder-[#9A8F86] pb-2 px-0" placeholder="E-mail adres" type="email"/>
+<button class="absolute right-0 bottom-2">
+<span class="material-symbols-outlined text-[#F6DCC4]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="px-12 py-8 border-t border-[#4E453E]/10 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-sans text-xs text-[#9A8F86]">&copy; 2024 Beeks Zien en Horen. All rights reserved.</p>
+<div class="flex gap-8">
+<span class="text-[10px] text-[#9A8F86] uppercase tracking-widest">Algemene Voorwaarden</span>
+<span class="text-[10px] text-[#9A8F86] uppercase tracking-widest">Cookies</span>
+</div>
+</div>
+</footer>
+</body></html>
