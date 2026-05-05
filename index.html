@@ -1,72 +1,55 @@
 <!DOCTYPE html>
-
-<html class="dark" lang="nl"><head>
+<html class="dark scroll-smooth" lang="nl">
+<head>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="referrer" content="no-referrer"/>
+<title>Beeks Zien en Horen — Uw specialist in oogzorg en gehoor</title>
+<meta name="description" content="Bij BEEKS Zien en Horen draait alles om persoonlijke aandacht. Specialist in brillen, contactlenzen, hoortoestellen en oogzorg. Beoordeeld met een 9.3/10."/>
+<meta property="og:title" content="Beeks Zien en Horen — Oogzorg & Gehoor Specialist"/>
+<meta property="og:description" content="Bij BEEKS Zien en Horen draait alles om persoonlijke aandacht. Specialist in brillen, contactlenzen, hoortoestellen en oogzorg. Beoordeeld met een 9.3/10."/>
+<meta property="og:image" content="logo.png"/>
+<meta property="og:type" content="website"/>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👓</text></svg>"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script>
       tailwind.config = {
         darkMode: "class",
         theme: {
           extend: {
             colors: {
-              "primary-fixed-dim": "#dbc2ab",
-              "on-secondary": "#452b02",
-              "tertiary": "#f0d8ff",
-              "secondary-fixed-dim": "#eabf88",
-              "secondary-container": "#614318",
-              "surface-tint": "#dbc2ab",
-              "on-primary-fixed-variant": "#554432",
-              "surface-container-low": "#1e1b1d",
-              "primary-fixed": "#f8dec6",
-              "on-tertiary-fixed": "#2d004f",
-              "outline": "#9a8f86",
-              "on-tertiary-fixed-variant": "#602d8c",
-              "tertiary-fixed-dim": "#e0b7ff",
-              "error": "#ffb4ab",
-              "on-surface-variant": "#d1c4ba",
-              "secondary-fixed": "#ffddb4",
-              "inverse-surface": "#e8e1e3",
-              "surface-dim": "#151314",
-              "surface-container": "#221f21",
-              "tertiary-fixed": "#f1daff",
-              "on-surface": "#e8e1e3",
-              "surface-container-lowest": "#100d0f",
-              "inverse-primary": "#6e5b48",
-              "on-primary": "#3d2d1d",
-              "surface-bright": "#3c383a",
-              "outline-variant": "#4e453e",
-              "on-tertiary": "#480f73",
-              "primary-container": "#d9c0a9",
-              "inverse-on-surface": "#332f31",
-              "on-tertiary-container": "#6c3897",
-              "on-error-container": "#ffdad6",
-              "on-secondary-fixed": "#291800",
-              "on-secondary-fixed-variant": "#5e4116",
-              "surface": "#151314",
-              "on-background": "#e8e1e3",
-              "on-secondary-container": "#dbb17c",
-              "on-primary-container": "#604e3c",
-              "on-error": "#690005",
               "primary": "#f6dcc4",
-              "on-primary-fixed": "#26190a",
-              "surface-container-highest": "#373436",
-              "error-container": "#93000a",
-              "surface-container-high": "#2c292b",
-              "background": "#151314",
+              "primary-container": "#d9c0a9",
+              "on-primary": "#3d2d1d",
+              "tertiary": "#f0d8ff",
               "secondary": "#eabf88",
-              "tertiary-container": "#deb4ff",
-              "surface-variant": "#373436"
+              "outline": "#9a8f86",
+              "outline-variant": "#4e453e",
+              "on-surface": "#e8e1e3",
+              "on-surface-variant": "#d1c4ba",
+              "surface": "#151314",
+              "surface-dim": "#151314",
+              "surface-container-lowest": "#100d0f",
+              "surface-container-low": "#1e1b1d",
+              "surface-container": "#221f21",
+              "surface-container-high": "#2c292b",
+              "surface-container-highest": "#373436",
+              "surface-bright": "#3c383a",
+              "on-background": "#e8e1e3",
+              "background": "#151314",
+              "error": "#ffb4ab",
             },
             fontFamily: {
-              "headline": ["Noto Serif"],
-              "body": ["Inter"],
-              "label": ["Inter"]
+              "headline": ["Lora", "serif"],
+              "body": ["Inter", "sans-serif"],
+              "label": ["Inter", "sans-serif"],
             },
-            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+            letterSpacing: {
+              "headline": "-0.02em",
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px"},
           },
         },
       }
@@ -81,210 +64,344 @@
             font-family: 'Inter', sans-serif;
         }
         .glass-nav {
-            background: rgba(21, 19, 20, 0.7);
-            backdrop-filter: blur(20px);
+            background: rgba(21, 19, 20, 0.75);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
         }
         .hero-gradient {
             background: linear-gradient(135deg, #f6dcc4 0%, #d9c0a9 100%);
         }
+        .text-balance { text-wrap: balance; }
     </style>
 </head>
-<body class="bg-surface text-on-surface">
-<!-- TopNavBar Component -->
-<nav class="fixed top-0 w-full z-50 glass-nav">
-<div class="flex justify-between items-center px-12 py-6 w-full max-w-screen-2xl mx-auto">
-<a href="index.html"><img src="logo.png" alt="Beeks Zien en Horen" class="h-10"></a>
+<body class="bg-surface text-on-surface font-body">
+
+<!-- Navigation -->
+<header>
+<nav class="fixed top-0 w-full z-50 glass-nav" role="navigation" aria-label="Hoofdnavigatie">
+<div class="flex justify-between items-center px-6 lg:px-12 py-5 w-full max-w-screen-2xl mx-auto">
+<a href="index.html" aria-label="Beeks Zien en Horen — Home">
+<img src="logo.png" alt="Beeks Zien en Horen logo" class="h-9 lg:h-10"/>
+</a>
 <div class="hidden md:flex items-center gap-8">
-<a class="font-serif text-lg tracking-tight text-[#9A8F86] hover:text-[#F6DCC4] transition-colors" href="zien.html">Zien</a>
-<a class="font-serif text-lg tracking-tight text-[#9A8F86] hover:text-[#F6DCC4] transition-colors" href="horen.html">Horen</a>
-<a class="font-serif text-lg tracking-tight text-[#9A8F86] hover:text-[#F6DCC4] transition-colors" href="#historie">Over ons</a>
-<a class="font-serif text-lg tracking-tight text-[#9A8F86] hover:text-[#F6DCC4] transition-colors" href="#contact">Contact</a>
+<a class="font-headline text-lg tracking-headline text-outline hover:text-primary transition-colors duration-300" href="zien.html">Zien</a>
+<a class="font-headline text-lg tracking-headline text-outline hover:text-primary transition-colors duration-300" href="horen.html">Horen</a>
+<a class="font-headline text-lg tracking-headline text-outline hover:text-primary transition-colors duration-300" href="over-ons.html">Over ons</a>
+<a class="font-headline text-lg tracking-headline text-outline hover:text-primary transition-colors duration-300" href="contact.html">Contact</a>
 </div>
-<div class="flex items-center gap-6">
-<button class="text-[#9A8F86] font-serif text-lg tracking-tight hover:text-[#F6DCC4] transition-colors">NL/EN</button>
-<a href="#afspraak" class="hero-gradient text-on-primary px-6 py-2.5 rounded-md font-medium text-sm transition-transform active:scale-95">Afspraak Maken</a>
+<div class="flex items-center gap-4 lg:gap-6">
+<a href="tel:+31402010320" class="hidden lg:flex items-center gap-2 text-outline hover:text-primary transition-colors text-sm">
+<span class="material-symbols-outlined text-base">call</span>
+040 201 0320
+</a>
+<a href="#afspraak" class="hero-gradient text-on-primary px-5 lg:px-6 py-2.5 rounded-lg font-medium text-sm transition-all duration-300 hover:shadow-lg hover:shadow-primary-container/20 active:scale-95">
+Afspraak Maken
+</a>
 </div>
 </div>
 </nav>
+</header>
+
 <main>
 <!-- Hero Section -->
-<section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+<section class="relative min-h-screen flex items-center pt-20 overflow-hidden" aria-label="Hero">
 <div class="absolute inset-0 z-0">
-<img class="w-full h-full object-cover opacity-40" data-alt="luxury optical boutique interior with elegant shelving and soft atmospheric lighting reflecting on designer eyewear" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnAZNb383XLbeHJrNyFbkq7q3C1WONjcj_vns1uXQuNuNeMgl5v49_u7Iu7Q-VlY_e4WFlNq_ezjrioNkWZ5KhCnMzZTzX3vlfGZJWIfxX4rNZrPJy23MmVDp3ZgGY_C0vSf2sWe-USqaGJPqhtMdfxg_endEdieWrNqPu75YwKsi5424-rq7CEGo6oB7lLpWAIGTyPB3VBFL7qLmKfifEG0VfJOqp1Q1-rEmop3w0uMCUhQ7lASE2t-bV0j74GyKlPzWJv3xPOwg"/>
-<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/60 to-transparent"></div>
+<img class="w-full h-full object-cover opacity-35" alt="Luxueus interieur van optiekzaak Beeks met elegante verlichting en designer brillen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnAZNb383XLbeHJrNyFbkq7q3C1WONjcj_vns1uXQuNuNeMgl5v49_u7Iu7Q-VlY_e4WFlNq_ezjrioNkWZ5KhCnMzZTzX3vlfGZJWIfxX4rNZrPJy23MmVDp3ZgGY_C0vSf2sWe-USqaGJPqhtMdfxg_endEdieWrNqPu75YwKsi5424-rq7CEGo6oB7lLpWAIGTyPB3VBFL7qLmKfifEG0VfJOqp1Q1-rEmop3w0uMCUhQ7lASE2t-bV0j74GyKlPzWJv3xPOwg"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/70 to-surface/20"></div>
 </div>
-<div class="relative z-10 w-full max-w-screen-2xl mx-auto px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="relative z-10 w-full max-w-screen-2xl mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 <div class="lg:col-span-7">
-<span class="inline-block px-3 py-1 mb-6 text-[10px] tracking-[0.2em] uppercase font-bold text-tertiary border border-outline-variant/30 rounded-full">
-                        Exclusieve Zorg
+<span class="inline-block px-4 py-1.5 mb-8 text-[10px] tracking-[0.25em] uppercase font-semibold text-tertiary border border-outline-variant/30 rounded-full">
+                        Persoonlijke aandacht sinds 1982
                     </span>
-<h1 class="font-headline text-6xl md:text-8xl leading-[1.1] text-primary mb-8 tracking-tighter">
-                        Persoonlijke aandacht <br/>voor uw zicht en gehoor.
+<h1 class="font-headline text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[1.08] text-primary mb-8 tracking-headline text-balance">
+                        Meer dan brillen of hoortoestellen.
                     </h1>
+<p class="text-on-surface-variant text-lg lg:text-xl max-w-xl leading-relaxed mb-10">
+                        Bij BEEKS begint alles met persoonlijke aandacht. Wij nemen de tijd om te luisteren, kijken verder dan testresultaten en combineren vakmanschap met echte zorg.
+                    </p>
 <div class="flex flex-wrap gap-4 items-center">
-<a href="#afspraak" class="hero-gradient text-on-primary px-10 py-4 rounded-md font-semibold text-lg hover:opacity-90 transition-all flex items-center gap-2 group">
+<a href="#afspraak" class="hero-gradient text-on-primary px-8 lg:px-10 py-4 rounded-lg font-semibold text-base lg:text-lg hover:shadow-xl hover:shadow-primary-container/20 transition-all duration-300 flex items-center gap-2 group">
                             Afspraak maken
-                            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
 </a>
-<a href="zien.html" class="px-10 py-4 border border-outline/30 rounded-md font-serif text-lg text-primary hover:bg-surface-bright transition-colors">
+<a href="zien.html" class="px-8 lg:px-10 py-4 border border-outline/30 rounded-lg font-headline text-base lg:text-lg text-primary hover:bg-surface-bright transition-all duration-300">
                             Bekijk de collectie
                         </a>
 </div>
 </div>
 </div>
-<div class="absolute bottom-12 right-12 z-10 hidden md:block">
-<div class="bg-surface-container/80 backdrop-blur-md p-6 border-l-2 border-primary max-w-xs">
-<p class="text-sm text-outline mb-2 font-label uppercase tracking-widest">Onze Filosofie</p>
-<p class="font-serif text-lg leading-relaxed italic text-on-surface">"Wij geloven dat elk oog en elk oor uniek is, en een behandeling op maat verdient."</p>
+<!-- Philosophy card -->
+<div class="absolute bottom-8 lg:bottom-12 right-6 lg:right-12 z-10 hidden md:block">
+<div class="bg-surface-container/80 backdrop-blur-xl p-6 border-l-2 border-primary max-w-xs rounded-r-xl">
+<p class="text-[10px] text-outline mb-2 font-label uppercase tracking-[0.2em]">Onze Filosofie</p>
+<p class="font-headline text-base leading-relaxed italic text-on-surface">"Wij geloven dat elk oog en elk oor uniek is, en een behandeling op maat verdient."</p>
 </div>
 </div>
 </section>
-<!-- Service Section (Asymmetric Bento) -->
-<section class="py-32 px-12 max-w-screen-2xl mx-auto">
-<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
-<div class="md:col-span-8 group relative overflow-hidden rounded-xl h-[600px] flex items-end p-12 bg-surface-container-low">
-<img class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-700" data-alt="close-up of premium designer glasses frames highlighting the intricate craftsmanship and high-quality lens clarity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArBRy1IRbBxowm-AKiPVPInPrQIjOKpy3SNEKbfj5ekJLtXuUA4wbS_WXfT8J1n7Z0fiidRmcavMV_B6wDTrCYLXVyeuOBSxTe_2dKzhyglvcw93cwIc0tH7GUKCW22BkXuhivlHQjO_E23wBIPkQnzNKYb_f7iMgq-eUQ9nezr-O2ciAZZLcpQEq7cdFCX_6JRC9utL3AEwYAf62Bk7f_IS3eJULd3Y0unecBsBII-CCQrs9tx71XoFPjfE9LMmVUdEa8I1EUbSU"/>
-<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent"></div>
+
+<!-- Quick Links Grid -->
+<section class="py-6 px-6 lg:px-12 -mt-20 relative z-20" aria-label="Snelle links">
+<div class="max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+<a href="zien.html" class="group bg-surface-container hover:bg-surface-container-high border border-outline-variant/10 rounded-xl p-6 lg:p-8 transition-all duration-300 hover:-translate-y-1">
+<span class="material-symbols-outlined text-primary text-3xl mb-4 block" style="font-variation-settings: 'FILL' 1;">visibility</span>
+<h2 class="font-headline text-lg lg:text-xl text-primary mb-2">Zien</h2>
+<p class="text-outline text-sm leading-relaxed hidden lg:block">Brillen, contactlenzen & oogzorg</p>
+</a>
+<a href="horen.html" class="group bg-surface-container hover:bg-surface-container-high border border-outline-variant/10 rounded-xl p-6 lg:p-8 transition-all duration-300 hover:-translate-y-1">
+<span class="material-symbols-outlined text-primary text-3xl mb-4 block" style="font-variation-settings: 'FILL' 1;">hearing</span>
+<h2 class="font-headline text-lg lg:text-xl text-primary mb-2">Horen</h2>
+<p class="text-outline text-sm leading-relaxed hidden lg:block">Hoortoestellen & gehoortest</p>
+</a>
+<a href="#afspraak" class="group bg-surface-container hover:bg-surface-container-high border border-outline-variant/10 rounded-xl p-6 lg:p-8 transition-all duration-300 hover:-translate-y-1">
+<span class="material-symbols-outlined text-primary text-3xl mb-4 block" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
+<h2 class="font-headline text-lg lg:text-xl text-primary mb-2">Afspraak</h2>
+<p class="text-outline text-sm leading-relaxed hidden lg:block">Plan uw bezoek bij ons in</p>
+</a>
+<a href="zien/contactlens-praktijk.html" class="group bg-surface-container hover:bg-surface-container-high border border-outline-variant/10 rounded-xl p-6 lg:p-8 transition-all duration-300 hover:-translate-y-1">
+<span class="material-symbols-outlined text-primary text-3xl mb-4 block" style="font-variation-settings: 'FILL' 1;">shopping_bag</span>
+<h2 class="font-headline text-lg lg:text-xl text-primary mb-2">Online</h2>
+<p class="text-outline text-sm leading-relaxed hidden lg:block">Contactlenzen bestellen</p>
+</a>
+</div>
+</div>
+</section>
+
+<!-- Services Section (Asymmetric Bento) -->
+<section class="py-24 lg:py-32 px-6 lg:px-12 max-w-screen-2xl mx-auto" aria-label="Onze diensten">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 lg:gap-8">
+<!-- Zien Card -->
+<a href="zien.html" class="md:col-span-8 group relative overflow-hidden rounded-2xl h-[500px] lg:h-[600px] flex items-end p-8 lg:p-12 bg-surface-container-low">
+<img class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-700" alt="Premium designer brillen met vakmanschap en hoogwaardige lenzen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArBRy1IRbBxowm-AKiPVPInPrQIjOKpy3SNEKbfj5ekJLtXuUA4wbS_WXfT8J1n7Z0fiidRmcavMV_B6wDTrCYLXVyeuOBSxTe_2dKzhyglvcw93cwIc0tH7GUKCW22BkXuhivlHQjO_E23wBIPkQnzNKYb_f7iMgq-eUQ9nezr-O2ciAZZLcpQEq7cdFCX_6JRC9utL3AEwYAf62Bk7f_IS3eJULd3Y0unecBsBII-CCQrs9tx71XoFPjfE9LMmVUdEa8I1EUbSU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/40 to-transparent"></div>
 <div class="relative z-10">
-<h2 class="font-headline text-5xl text-primary mb-4 italic">ZIEN</h2>
-<p class="text-on-surface-variant max-w-md text-lg leading-relaxed mb-8">
+<h3 class="font-headline text-4xl lg:text-5xl text-primary mb-3 italic">Zien</h3>
+<p class="text-on-surface-variant max-w-md text-base lg:text-lg leading-relaxed mb-6">
                             Van technologisch geavanceerde lenzen tot de meest exclusieve monturen uit internationale modehuizen. Wij brengen scherpte en stijl samen.
                         </p>
-<a class="inline-flex items-center gap-2 text-primary font-medium hover:gap-4 transition-all" href="zien.html">
+<span class="inline-flex items-center gap-2 text-primary font-medium group-hover:gap-4 transition-all duration-300">
                             Ontdek Oogzorg <span class="material-symbols-outlined">trending_flat</span>
+</span>
+</div>
 </a>
-</div>
-</div>
-<div class="md:col-span-4 group relative overflow-hidden rounded-xl h-[600px] flex items-end p-12 bg-surface-container-low">
-<img class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-700" data-alt="modern hearing aid device being fitted by a specialist in a clean professional medical environment with warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqDfP9mf9JyDoZwjEmi90qw2dGeGnMTASpWQWajL6naq8ynb7plCHIMqFtk-slzMGt5nWbqfiPkePPz4SixgxSWnM4D312pbT0r1j334utAM5PIYwsq-WP8sFMp8W0RYJEmT5NCwPrDXtcSKBwAYEPVzQNTGAgzSiroh3gnT1dhGu83eIcmTRpaJ4_eFEvgBXDQ4_gNAgRKSXZOsDdRUsUXxjEUHD81E6ZEPv5Zr6VpPvf8Kjyl0Aay8f-O3mld1Y7Y8ov-5UPWo8"/>
-<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent"></div>
+<!-- Horen Card -->
+<a href="horen.html" class="md:col-span-4 group relative overflow-hidden rounded-2xl h-[500px] lg:h-[600px] flex items-end p-8 lg:p-12 bg-surface-container-low">
+<img class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-700" alt="Specialist past modern hoortoestel aan in professionele medische omgeving" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqDfP9mf9JyDoZwjEmi90qw2dGeGnMTASpWQWajL6naq8ynb7plCHIMqFtk-slzMGt5nWbqfiPkePPz4SixgxSWnM4D312pbT0r1j334utAM5PIYwsq-WP8sFMp8W0RYJEmT5NCwPrDXtcSKBwAYEPVzQNTGAgzSiroh3gnT1dhGu83eIcmTRpaJ4_eFEvgBXDQ4_gNAgRKSXZOsDdRUsUXxjEUHD81E6ZEPv5Zr6VpPvf8Kjyl0Aay8f-O3mld1Y7Y8ov-5UPWo8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/40 to-transparent"></div>
 <div class="relative z-10">
-<h2 class="font-headline text-5xl text-primary mb-4 italic">HOREN</h2>
-<p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+<h3 class="font-headline text-4xl lg:text-5xl text-primary mb-3 italic">Horen</h3>
+<p class="text-on-surface-variant text-base lg:text-lg leading-relaxed mb-6">
                             Onzichtbare techniek voor een hoorbare wereld. Onze audiologen bieden precisie voor uw gehoor.
                         </p>
-<a class="inline-flex items-center gap-2 text-primary font-medium hover:gap-4 transition-all" href="horen.html">
+<span class="inline-flex items-center gap-2 text-primary font-medium group-hover:gap-4 transition-all duration-300">
                             Ontdek Gehoor <span class="material-symbols-outlined">trending_flat</span>
+</span>
+</div>
+</a>
+</div>
+</section>
+
+<!-- Trust / Social Proof Section -->
+<section class="bg-surface-container-low py-16 lg:py-24" aria-label="Klantwaardering">
+<div class="max-w-screen-2xl mx-auto px-6 lg:px-12">
+<div class="flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-16">
+<div class="text-center lg:text-left shrink-0">
+<p class="text-primary font-headline text-6xl lg:text-7xl mb-1 tracking-headline">9.3<span class="text-2xl lg:text-3xl text-outline">/10</span></p>
+<p class="text-on-surface-variant uppercase tracking-[0.25em] font-label text-xs lg:text-sm">Klantwaardering</p>
+<p class="text-outline text-sm mt-2">Op basis van 1189 reviews</p>
+</div>
+<div class="flex-1 max-w-2xl text-center lg:text-left">
+<h3 class="font-headline text-2xl lg:text-3xl text-primary mb-4 italic tracking-headline">Vriendelijk, betrokken, professioneel en altijd open voor overleg.</h3>
+<p class="text-outline text-base lg:text-lg leading-relaxed">Onze passie voor kwaliteit en persoonlijke begeleiding vertaalt zich in de hoge tevredenheid van onze klanten. Al meer dan 40 jaar de vertrouwde keuze.</p>
+</div>
+<div class="flex gap-3">
+<div class="w-11 h-11 rounded-full border border-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<div class="w-11 h-11 rounded-full border border-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div class="w-11 h-11 rounded-full border border-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Over Ons Section -->
+<section id="over-ons" class="py-24 lg:py-32 px-6 lg:px-12 max-w-screen-2xl mx-auto" aria-label="Over ons">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+<div class="order-2 lg:order-1">
+<img class="rounded-2xl grayscale hover:grayscale-0 transition-all duration-700 h-[450px] lg:h-[600px] w-full object-cover" alt="Historische werkplaats van brillenmaker Beeks met vintage gereedschap in warm zonlicht" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB--qTiD0IriCbB5jQcNm1xQWVkDVLV2TMf6lSaAPTZS2OeaU8CKMS-c5eX96Fyd0O_NmkrXSUOXiB2vVG7gAL-1loTiOSPifDgsLdve6GrGCYkkl51685FfD6hQKHrdLDgGIFqnjQay1-rOoWhSprz5bYt-p1ZP1ZzmLdeTfKDCqJb63OfGbXc9VaGrgxiksNKiuDysurWvog8RwVtvLDgJ8SM69i1d0pc6hwJ36hatFsckOI1K-t9I3B3JxUonIuH-cymF90gGQ0"/>
+</div>
+<div class="order-1 lg:order-2">
+<span class="text-tertiary font-label text-xs tracking-[0.25em] uppercase mb-4 block">Over Beeks</span>
+<h3 class="font-headline text-4xl lg:text-5xl text-primary mb-8 italic tracking-headline">Vakmanschap, passie en persoonlijke aandacht.</h3>
+<p class="text-on-surface-variant text-base lg:text-lg leading-relaxed mb-6">
+                        Bij BEEKS Zien en Horen draait het om meer dan alleen brillen of hoortoestellen. Alles begint met persoonlijke aandacht. Wij nemen de tijd om te luisteren, kijken verder dan testresultaten en combineren vakmanschap met echte zorg. Geen haast — onze focus ligt op u echt helpen.
+                    </p>
+<p class="text-on-surface-variant text-base lg:text-lg leading-relaxed mb-6">
+                        Kees Beeks begon als jonge opticien en groeide geleidelijk uit tot de bekende brillenspecialist die velen vandaag kennen. Wat begon als een kleine winkel van 29 vierkante meter, is uitgegroeid tot de prachtige zaak waarin BEEKS Zien en Horen zich vandaag bevindt. Groter en completer, maar nog steeds gedreven door dezelfde waarden: vakmanschap, passie voor het vak en persoonlijke aandacht voor elke klant.
+                    </p>
+<div class="flex flex-wrap gap-8 mt-10">
+<div>
+<p class="text-3xl lg:text-4xl font-headline text-primary tracking-headline">40+</p>
+<p class="text-xs tracking-[0.15em] uppercase text-outline mt-1">Jaar ervaring</p>
+</div>
+<div>
+<p class="text-3xl lg:text-4xl font-headline text-primary tracking-headline">1189</p>
+<p class="text-xs tracking-[0.15em] uppercase text-outline mt-1">Klantreviews</p>
+</div>
+<div>
+<p class="text-3xl lg:text-4xl font-headline text-primary tracking-headline">9.3</p>
+<p class="text-xs tracking-[0.15em] uppercase text-outline mt-1">Gemiddelde score</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Diensten Overzicht -->
+<section class="py-24 lg:py-32 px-6 lg:px-12 bg-surface-container-low" aria-label="Onze diensten in detail">
+<div class="max-w-screen-2xl mx-auto">
+<div class="text-center mb-16">
+<span class="text-tertiary font-label text-xs tracking-[0.25em] uppercase mb-4 block">Wat wij bieden</span>
+<h3 class="font-headline text-4xl lg:text-5xl text-primary italic tracking-headline">Expertise onder één dak</h3>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Montuur Advies -->
+<a href="zien/montuur-advies.html" class="group bg-surface-container rounded-2xl p-8 border border-outline-variant/5 hover:border-primary/20 transition-all duration-300 hover:-translate-y-1">
+<span class="material-symbols-outlined text-primary text-3xl mb-5 block">eyeglasses</span>
+<h4 class="font-headline text-xl text-on-surface mb-3">Montuur Advies</h4>
+<p class="text-outline text-sm leading-relaxed mb-4">Persoonlijk kleur- en vormadvies. Exclusieve merken als Lindberg, Theo, Oakley en meer.</p>
+<span class="text-primary text-sm font-medium group-hover:underline">Bekijk monturen →</span>
+</a>
+<!-- Brillenglazen -->
+<a href="zien/brillenglazen.html" class="group bg-surface-container rounded-2xl p-8 border border-outline-variant/5 hover:border-primary/20 transition-all duration-300 hover:-translate-y-1">
+<span class="material-symbols-outlined text-primary text-3xl mb-5 block">lens</span>
+<h4 class="font-headline text-xl text-on-surface mb-3">Brillenglazen</h4>
+<p class="text-outline text-sm leading-relaxed mb-4">Zeiss Vision Partnership voor maximale precisie. Inclusief nachtzichtmeting met i.ProfilerPlus.</p>
+<span class="text-primary text-sm font-medium group-hover:underline">Ontdek Zeiss →</span>
+</a>
+<!-- Contactlenzen -->
+<a href="zien/contactlens-praktijk.html" class="group bg-surface-container rounded-2xl p-8 border border-outline-variant/5 hover:border-primary/20 transition-all duration-300 hover:-translate-y-1">
+<span class="material-symbols-outlined text-primary text-3xl mb-5 block">contacts</span>
+<h4 class="font-headline text-xl text-on-surface mb-3">Contactlenzen</h4>
+<p class="text-outline text-sm leading-relaxed mb-4">Zachte, harde en nachtlenzen. Abonnement vanaf €19,50/maand met gratis controles.</p>
+<span class="text-primary text-sm font-medium group-hover:underline">Ontdek lenzen →</span>
+</a>
+<!-- Kidsclub -->
+<a href="zien/kidsclub.html" class="group bg-surface-container rounded-2xl p-8 border border-outline-variant/5 hover:border-primary/20 transition-all duration-300 hover:-translate-y-1">
+<span class="material-symbols-outlined text-primary text-3xl mb-5 block" style="font-variation-settings: 'FILL' 1;">child_care</span>
+<h4 class="font-headline text-xl text-on-surface mb-3">Beeks Kidsclub</h4>
+<p class="text-outline text-sm leading-relaxed mb-4">Specialistische zorg voor jonge ogen. Stoere, onverwoestbare monturen en gratis oogmetingen.</p>
+<span class="text-primary text-sm font-medium group-hover:underline">Bekijk Kidsclub →</span>
+</a>
+<!-- Specialisten -->
+<a href="zien/specialisten.html" class="group bg-surface-container rounded-2xl p-8 border border-outline-variant/5 hover:border-primary/20 transition-all duration-300 hover:-translate-y-1">
+<span class="material-symbols-outlined text-primary text-3xl mb-5 block">medical_services</span>
+<h4 class="font-headline text-xl text-on-surface mb-3">Oogzorg Specialisten</h4>
+<p class="text-outline text-sm leading-relaxed mb-4">Optometrie en orthoptie onder één dak. Onderzoek, diagnostiek en persoonlijke begeleiding.</p>
+<span class="text-primary text-sm font-medium group-hover:underline">Onze specialisten →</span>
+</a>
+<!-- Hoortoestellen -->
+<a href="horen.html" class="group bg-surface-container rounded-2xl p-8 border border-outline-variant/5 hover:border-primary/20 transition-all duration-300 hover:-translate-y-1">
+<span class="material-symbols-outlined text-primary text-3xl mb-5 block">hearing</span>
+<h4 class="font-headline text-xl text-on-surface mb-3">Hoortoestellen</h4>
+<p class="text-outline text-sm leading-relaxed mb-4">Privaat en zorg hoortoestellen. Van gehoortest tot persoonlijke fijnafstemming.</p>
+<span class="text-primary text-sm font-medium group-hover:underline">Ontdek gehoor →</span>
 </a>
 </div>
 </div>
-</div>
 </section>
-<!-- Trust Section -->
-<section class="bg-surface-container-low py-24">
-<div class="max-w-screen-2xl mx-auto px-12 flex flex-col md:flex-row justify-between items-center gap-12">
-<div class="text-center md:text-left">
-<p class="text-primary font-headline text-7xl mb-2">9.3<span class="text-3xl text-outline">/10</span></p>
-<p class="text-on-surface-variant uppercase tracking-[0.3em] font-label text-sm">Klantwaardering</p>
-</div>
-<div class="flex-1 max-w-2xl text-center md:text-left">
-<h3 class="font-serif text-3xl text-primary mb-4 italic">Al meer dan 40 jaar de vertrouwde keuze.</h3>
-<p class="text-outline text-lg">Onze passie voor kwaliteit en persoonlijke begeleiding vertaalt zich in de hoge tevredenheid van onze cliënten.</p>
-</div>
-<div class="flex gap-4">
-<div class="w-12 h-12 rounded-full border border-primary/20 flex items-center justify-center">
-<span class="material-symbols-outlined text-primary" data-weight="fill">star</span>
-</div>
-<div class="w-12 h-12 rounded-full border border-primary/20 flex items-center justify-center">
-<span class="material-symbols-outlined text-primary" data-weight="fill">verified</span>
-</div>
-<div class="w-12 h-12 rounded-full border border-primary/20 flex items-center justify-center">
-<span class="material-symbols-outlined text-primary" data-weight="fill">favorite</span>
-</div>
-</div>
-</div>
-</section>
-<!-- Historie & Specialisten -->
-<section id="historie" class="py-32 px-12 max-w-screen-2xl mx-auto">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
-<div>
-<img class="rounded-xl grayscale hover:grayscale-0 transition-all duration-700 h-[600px] w-full object-cover" data-alt="vintage optical workshop tools on a wooden bench with warm sunlight streaming through a window" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB--qTiD0IriCbB5jQcNm1xQWVkDVLV2TMf6lSaAPTZS2OeaU8CKMS-c5eX96Fyd0O_NmkrXSUOXiB2vVG7gAL-1loTiOSPifDgsLdve6GrGCYkkl51685FfD6hQKHrdLDgGIFqnjQay1-rOoWhSprz5bYt-p1ZP1ZzmLdeTfKDCqJb63OfGbXc9VaGrgxiksNKiuDysurWvog8RwVtvLDgJ8SM69i1d0pc6hwJ36hatFsckOI1K-t9I3B3JxUonIuH-cymF90gGQ0"/>
-</div>
-<div>
-<h2 class="font-headline text-5xl text-primary mb-8 italic">Onze Historie</h2>
-<p class="text-on-surface-variant text-lg leading-relaxed mb-6">
-                        Beeks Zien en Horen begon als een kleine ambachtelijke brillenmaker. Vandaag de dag zijn we uitgegroeid tot een modern expertisecentrum waar vakmanschap en innovatie hand in hand gaan.
-                    </p>
-<p class="text-on-surface-variant text-lg leading-relaxed mb-12">
-                        Onze specialisten zijn meesters in hun vak. Elke opticien, optometrist en audioloog bij Beeks wordt continu bijgeschoold om u de beste zorg te garanderen.
-                    </p>
-<div class="space-y-8">
-<div class="flex items-center gap-6 p-6 bg-surface-container rounded-lg border-l border-primary/30">
-<img class="w-16 h-16 rounded-full object-cover ring-2 ring-primary/20" data-alt="portrait of a professional male optometrist in a stylish dark clinic environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0OANokE1lpmcOisXyq-dzO-ODXK7KYxCd0LJE3SSH6ikInvNKWPMB1Q-yG3-jq234uh9Drt0B3Rto6b6w8555mQ6RzKyAaSjpBeUJ6Rpb70fuM_nPAKWmqUhcZKgOXQTMHfFavP6QIR-tdytpmxN9CxKbc5P0pcc3AdX6XOV-aBLxuPJ3RLsSAtXO4hNVPkxyNPdEMtdhWmVLakLRooMlhPb7xne2yZEM6DdegC19DANpHSOdGLfJ4o-SRXb3noZGbdFwW5EtMYs"/>
-<div>
-<h4 class="text-primary font-semibold">Johan Beeks</h4>
-<p class="text-outline text-sm">Hoofd Optometrist</p>
-</div>
-</div>
-<div class="flex items-center gap-6 p-6 bg-surface-container rounded-lg border-l border-primary/30">
-<img class="w-16 h-16 rounded-full object-cover ring-2 ring-primary/20" data-alt="portrait of a female specialist audiologist in a high-end medical office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKPx-Wjm1qyEu-nfRj-vun3jfXGEqhplcAZDcpUGZzRY_tbhNeibMOGb3QnSLox_tUHfZY_ys1WI76uNvMbagNc4QSb9SDnN4RKTx5BmMMTzg9aBiwQDNpnNLPlkNWaztdMLpNlFFNLgrukQubykf1Rkik4-Upd-vMwHvNAU6mxTmHYzoxvHN3mqZZfY6T1RlfnTTEwqNv2qRHu3fhHUAU9bMTJMF3gVFRW-sD5r5i2mH50Er3XOPBFwkEwBt5lIOqGf939JVBRh0"/>
-<div>
-<h4 class="text-primary font-semibold">Sarah van den Berg</h4>
-<p class="text-outline text-sm">Senior Audioloog</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
+
 <!-- CTA Section -->
-<section id="afspraak" class="py-32 bg-surface-container-highest">
-<div class="max-w-screen-md mx-auto text-center px-6">
-<h2 class="font-headline text-4xl text-primary mb-8 italic">Ervaar de precisie van Beeks zelf.</h2>
-<p class="text-on-surface-variant text-lg mb-12">Maak vandaag nog een afspraak voor een uitgebreide oog- of hoortest.</p>
-<a href="mailto:info@beeks.nl?subject=Afspraak" class="inline-block hero-gradient text-on-primary px-12 py-5 rounded-md font-bold text-xl hover:scale-105 transition-transform">
-                    Afspraak Inplannen
-                </a>
+<section id="afspraak" class="py-24 lg:py-32 bg-surface-container-highest" aria-label="Afspraak maken">
+<div class="max-w-screen-lg mx-auto text-center px-6">
+<span class="material-symbols-outlined text-primary text-4xl mb-6 block" style="font-variation-settings: 'FILL' 1;">event_available</span>
+<h3 class="font-headline text-3xl lg:text-5xl text-primary mb-6 italic tracking-headline text-balance">Ervaar de precisie van Beeks zelf.</h3>
+<p class="text-on-surface-variant text-base lg:text-lg mb-10 max-w-xl mx-auto leading-relaxed">Maak vandaag nog een afspraak voor een uitgebreide oog- of hoortest. Wij nemen de tijd voor u.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<a href="mailto:info@beeks.nl?subject=Afspraak" class="hero-gradient text-on-primary px-10 py-4 rounded-lg font-bold text-lg hover:shadow-xl hover:shadow-primary-container/20 transition-all duration-300">
+                        Afspraak Inplannen
+                    </a>
+<a href="tel:+31402010320" class="px-10 py-4 border border-outline/30 rounded-lg font-headline text-lg text-primary hover:bg-surface-bright transition-all duration-300 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-xl">call</span>
+040 201 0320
+</a>
+</div>
 </div>
 </section>
 </main>
-<!-- Footer Component -->
-<footer id="contact" class="w-full border-t border-[#4E453E]/20 bg-[#1E1B1D]">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 w-full max-w-screen-2xl mx-auto">
-<div class="space-y-6">
-<div class="font-serif text-xl text-[#F6DCC4]">Beeks Zien en Horen</div>
-<p class="font-sans text-sm leading-relaxed text-[#9A8F86]">
-                    Uw specialist in exclusieve oogzorg en geavanceerde hoortechniek. Ambachtelijk vakmanschap sinds 1982.
+
+<!-- Footer -->
+<footer id="contact" class="w-full border-t border-outline-variant/20 bg-surface-container-low" role="contentinfo">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 px-6 lg:px-12 py-16 lg:py-20 w-full max-w-screen-2xl mx-auto">
+<!-- Brand -->
+<div class="space-y-5">
+<img src="logo.png" alt="Beeks Zien en Horen" class="h-8"/>
+<p class="text-sm leading-relaxed text-outline">
+                    Uw specialist in persoonlijke oogzorg en geavanceerde hoortechniek. Vakmanschap en passie sinds 1982.
                 </p>
 </div>
+<!-- Navigation -->
 <div class="space-y-4">
-<h5 class="text-[#F6DCC4] font-semibold mb-6">Menu</h5>
-<ul class="space-y-3 font-sans text-sm">
-<li><a class="text-[#9A8F86] hover:text-[#F6DCC4] transition-colors" href="#contact">Locaties</a></li>
-<li><a class="text-[#9A8F86] hover:text-[#F6DCC4] transition-colors" href="#contact">Openingstijden</a></li>
-<li><a class="text-[#9A8F86] hover:text-[#F6DCC4] transition-colors" href="zien.html">Zien</a></li>
-<li><a class="text-[#9A8F86] hover:text-[#F6DCC4] transition-colors" href="horen.html">Horen</a></li>
+<h4 class="text-primary font-headline text-base mb-4">Navigatie</h4>
+<ul class="space-y-3 text-sm">
+<li><a class="text-outline hover:text-primary transition-colors duration-300" href="zien.html">Zien</a></li>
+<li><a class="text-outline hover:text-primary transition-colors duration-300" href="horen.html">Horen</a></li>
+<li><a class="text-outline hover:text-primary transition-colors duration-300" href="over-ons.html">Over ons</a></li>
+<li><a class="text-outline hover:text-primary transition-colors duration-300" href="#afspraak">Afspraak maken</a></li>
+<li><a class="text-outline hover:text-primary transition-colors duration-300" href="zien/contactlens-praktijk.html">Online contactlenzen</a></li>
 </ul>
 </div>
+<!-- Contact & Openingstijden -->
 <div class="space-y-4">
-<h5 class="text-[#F6DCC4] font-semibold mb-6">Contact</h5>
-<ul class="space-y-3 font-sans text-sm text-[#9A8F86]">
-<li class="flex items-center gap-2">
-<span class="material-symbols-outlined text-xs">call</span>
-                        +31 (0) 123 456 789
-                    </li>
-<li class="flex items-center gap-2">
-<span class="material-symbols-outlined text-xs">mail</span>
-                        info@beeks.nl
-                    </li>
-<li class="flex items-center gap-2">
-<span class="material-symbols-outlined text-xs">location_on</span>
-                        Hoofdstraat 42, 1234 AB
-                    </li>
-</ul>
+<h4 class="text-primary font-headline text-base mb-4">Contact & Openingstijden</h4>
+<div class="space-y-3 text-sm text-outline">
+<p class="flex items-start gap-2">
+<span class="material-symbols-outlined text-base mt-0.5 shrink-0">location_on</span>
+                        Van Bruhezedal 18<br/>5551 EW Dommelen
+                    </p>
+<p class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base shrink-0">call</span>
+<a href="tel:+31402010320" class="hover:text-primary transition-colors">+31 40 201 0320</a>
+</p>
+<p class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base shrink-0">mail</span>
+<a href="mailto:info@beeks.nl" class="hover:text-primary transition-colors">info@beeks.nl</a>
+</p>
 </div>
-<div class="space-y-6">
-<h5 class="text-[#F6DCC4] font-semibold mb-6">Nieuwsbrief</h5>
+<div class="text-sm text-outline mt-4 space-y-1">
+<p>Ma: gesloten</p>
+<p>Di t/m do: 9:00 – 18:00</p>
+<p>Vr: 9:00 – 18:00</p>
+<p>Za: 9:00 – 17:00</p>
+</div>
+</div>
+<!-- Nieuwsbrief -->
+<div class="space-y-5">
+<h4 class="text-primary font-headline text-base mb-4">Nieuwsbrief</h4>
+<p class="text-sm text-outline leading-relaxed">Blijf op de hoogte van onze nieuwste collecties en aanbiedingen.</p>
 <div class="relative">
-<input class="w-full bg-[#373436] border-b border-[#4E453E]/20 px-4 py-3 text-sm focus:border-[#F6DCC4] outline-none transition-all" placeholder="Email adres" type="email"/>
-<button class="absolute right-2 top-2 text-[#F6DCC4]">
-<span class="material-symbols-outlined">chevron_right</span>
+<input class="w-full bg-surface-container border border-outline-variant/20 rounded-lg px-4 py-3 text-sm focus:border-primary focus:ring-1 focus:ring-primary/30 outline-none transition-all text-on-surface placeholder-outline" placeholder="Uw e-mailadres" type="email" aria-label="E-mailadres voor nieuwsbrief"/>
+<button class="absolute right-2 top-2 text-primary hover:text-primary-container transition-colors" aria-label="Aanmelden">
+<span class="material-symbols-outlined">arrow_forward</span>
 </button>
 </div>
 </div>
 </div>
-<div class="px-12 py-8 border-t border-[#4E453E]/10 text-center">
-<p class="font-sans text-sm leading-relaxed text-[#9A8F86]">© 2024 Beeks Zien en Horen. All rights reserved.</p>
+<!-- Bottom bar -->
+<div class="px-6 lg:px-12 py-6 border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-4 max-w-screen-2xl mx-auto">
+<p class="text-xs text-outline">© 2025 Beeks Zien en Horen. Alle rechten voorbehouden. KvK: 50757350</p>
+<div class="flex gap-6">
+<a href="#" class="text-xs text-outline hover:text-primary transition-colors">Privacy beleid</a>
+<a href="#" class="text-xs text-outline hover:text-primary transition-colors">Voorwaarden</a>
+</div>
 </div>
 </footer>
-</body></html>
+
+</body>
+</html>
