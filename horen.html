@@ -78,7 +78,14 @@
       .bg-primary-gradient {
         background: linear-gradient(135deg, #f6dcc4 0%, #d9c0a9 100%);
       }
-    </style>
+    
+.skip-link { position: absolute; left: -9999px; top: 0; z-index: 9999; }
+.skip-link:focus { left: 0; background: #151314; color: #f6dcc4; padding: 0.75rem 1.5rem; font-size: 0.875rem; border: 2px solid #f6dcc4; }
+
+/* Minimum touch targets for accessibility */
+nav a, footer a, button, [role="button"], .hero-gradient { min-height: 44px; min-width: 44px; display: inline-flex; align-items: center; justify-content: center; }
+nav a, footer a { display: inline-flex; align-items: center; }
+</style>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -166,6 +173,8 @@
 </script>
 </head>
 <body class="bg-background text-on-surface font-body selection:bg-primary/30">
+<a href="#main-content" class="skip-link">Direct naar inhoud</a>
+
 <!-- TopNavBar -->
 <nav class="fixed top-0 w-full z-50 bg-[#151314]/70 backdrop-blur-xl">
 <div class="flex justify-between items-center px-12 py-6 w-full max-w-screen-2xl mx-auto">
@@ -208,7 +217,7 @@
 </div>
 <div class="md:col-span-6 relative h-[600px] w-full">
 <div class="absolute inset-0 bg-surface-container-high rounded-xl overflow-hidden shadow-2xl">
-<img alt="Hearing specialist" class="w-full h-full object-cover grayscale-[20%] opacity-80" data-alt="Close-up of a professional hearing specialist in a warm sunlit office calmly talking to an elderly client with empathy and focus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjy-6MZOKLj86L2NJsStnPlmKB5N_Wt3m69KQwL452a-qVfeFzdeeEfTfswzj8ALbDa9tsnjauin0PJjwBNfqXgUqRuv80nqKtnXWttLD5TvuBBvqVHVw5uXntZuhjaG50VCfXa9SF5U-UhKSFIKf-HTl3zJaMZV7n5e6JrMbcQYnTjtBk1v7QF_2tEUonF-frYIyrPK7aezc2roj9O8E8I2mgv7_FdWUB72g-UbnXJF8h3RS5TFJhxGVJW3oJlqFxbwlUcyExm5s"/>
+<img alt="Hoorspecialist in gesprek met klant bij Beeks Zien en Horen" class="w-full h-full object-cover grayscale-[20%] opacity-80" data-alt="Close-up of a professional hearing specialist in a warm sunlit office calmly talking to an elderly client with empathy and focus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjy-6MZOKLj86L2NJsStnPlmKB5N_Wt3m69KQwL452a-qVfeFzdeeEfTfswzj8ALbDa9tsnjauin0PJjwBNfqXgUqRuv80nqKtnXWttLD5TvuBBvqVHVw5uXntZuhjaG50VCfXa9SF5U-UhKSFIKf-HTl3zJaMZV7n5e6JrMbcQYnTjtBk1v7QF_2tEUonF-frYIyrPK7aezc2roj9O8E8I2mgv7_FdWUB72g-UbnXJF8h3RS5TFJhxGVJW3oJlqFxbwlUcyExm5s"/>
 </div>
 <div class="absolute -bottom-8 -left-8 p-8 bg-surface-container-low/90 backdrop-blur-xl border border-outline-variant/20 rounded-xl max-w-xs shadow-2xl hidden lg:block">
 <p class="font-headline text-2xl text-primary italic mb-2">Persoonlijke aandacht</p>
@@ -275,7 +284,7 @@
 <div class="max-w-screen-2xl mx-auto flex flex-col md:flex-row gap-20 items-center">
 <div class="w-full md:w-1/2 relative">
 <div class="aspect-square bg-surface-container rounded-full overflow-hidden border-[16px] border-surface-container-low shadow-inner relative">
-<img alt="Diagnostic environment" class="w-full h-full object-cover mix-blend-luminosity hover:mix-blend-normal transition-all duration-700" data-alt="A clinical but cozy diagnostic room with modern silver hearing assessment equipment and soft ambient lighting on wooden surfaces" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDE4E9OOgPrAq3j-JcnwB1By6aZzLVaCv5_SCo0NN1oskWgwt115voYv5lgoTRNG429LVb82aXAvyn1aPY7OkhobqA37jpClu3V-h_ivLa3-BTdvaXDzUXANXfkgjFSAOTN0_JfAgeyE4L2TnMCzk90otkZ2Gd8Mn79VvBemvkCHb723CBOUV-MSBCmW0adEJ7lcfMrny8uZA7sS_wJqrbUgKFjjYzZreZrXdy4CHDxyr4JvvYCQ2Tn2fW2aflsh_O3vfk0EkchtgI"/>
+<img alt="Moderne gehoortest apparatuur in de diagnostische ruimte van Beeks" class="w-full h-full object-cover mix-blend-luminosity hover:mix-blend-normal transition-all duration-700" data-alt="A clinical but cozy diagnostic room with modern silver hearing assessment equipment and soft ambient lighting on wooden surfaces" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDE4E9OOgPrAq3j-JcnwB1By6aZzLVaCv5_SCo0NN1oskWgwt115voYv5lgoTRNG429LVb82aXAvyn1aPY7OkhobqA37jpClu3V-h_ivLa3-BTdvaXDzUXANXfkgjFSAOTN0_JfAgeyE4L2TnMCzk90otkZ2Gd8Mn79VvBemvkCHb723CBOUV-MSBCmW0adEJ7lcfMrny8uZA7sS_wJqrbUgKFjjYzZreZrXdy4CHDxyr4JvvYCQ2Tn2fW2aflsh_O3vfk0EkchtgI"/>
 </div>
 <!-- Focal Point Signature Component -->
 <div class="absolute -top-10 -right-10 bg-surface/70 backdrop-blur-xl p-8 rounded-lg border border-outline-variant/20 max-w-[240px] shadow-2xl">

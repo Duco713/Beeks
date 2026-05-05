@@ -48,6 +48,13 @@ tailwind.config = {
 body { background-color: #151314; color: #e8e1e3; font-family: 'Inter', sans-serif; }
 .glass-nav { background: rgba(21, 19, 20, 0.75); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); }
 .hero-gradient { background: linear-gradient(135deg, #F6DCC4 0%, #D9C0A9 100%); }
+
+.skip-link { position: absolute; left: -9999px; top: 0; z-index: 9999; }
+.skip-link:focus { left: 0; background: #151314; color: #f6dcc4; padding: 0.75rem 1.5rem; font-size: 0.875rem; border: 2px solid #f6dcc4; }
+
+/* Minimum touch targets for accessibility */
+nav a, footer a, button, [role="button"], .hero-gradient { min-height: 44px; min-width: 44px; display: inline-flex; align-items: center; justify-content: center; }
+nav a, footer a { display: inline-flex; align-items: center; }
 </style>
 <script type="application/ld+json">
 {
@@ -128,6 +135,8 @@ body { background-color: #151314; color: #e8e1e3; font-family: 'Inter', sans-ser
 </script>
 </head>
 <body class="bg-surface text-on-surface font-body">
+<a href="#main-content" class="skip-link">Direct naar inhoud</a>
+
 
 <!-- Navigation -->
 <header>
@@ -153,7 +162,7 @@ body { background-color: #151314; color: #e8e1e3; font-family: 'Inter', sans-ser
 </nav>
 </header>
 
-<main>
+<main id="main-content">
 
 <!-- Hero -->
 <section class="pt-32 px-6 lg:px-12 mb-28" aria-label="Introductie nachtlenzen">
