@@ -314,7 +314,7 @@ Van Bruhezedal 18<br/>5551 EW Dommelen
 </div>
 <!-- Bottom bar -->
 <div class="px-6 lg:px-12 py-6 border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-4 max-w-screen-2xl mx-auto">
-<p class="text-xs text-outline">&copy; 2025 Beeks Zien en Horen. Alle rechten voorbehouden. KvK: 50757350</p>
+<p class="text-xs text-outline"><span id="copyright-year"></span> Beeks Zien en Horen. Alle rechten voorbehouden.</p>
 <div class="flex gap-6">
 <a href="#" class="text-xs text-outline hover:text-primary transition-colors duration-300">Privacy beleid</a>
 <a href="#" class="text-xs text-outline hover:text-primary transition-colors duration-300">Voorwaarden</a>
@@ -322,5 +322,6 @@ Van Bruhezedal 18<br/>5551 EW Dommelen
 </div>
 </footer>
 
+<script>document.getElementById("copyright-year").textContent = "\u00A9 " + new Date().getFullYear();</script>
 </body>
 </html>
