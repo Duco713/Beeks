@@ -253,8 +253,46 @@ title="Locatie Beeks Zien en Horen op Google Maps">
 </div>
 </section>
 
+<!-- Contact Form -->
+<section class="py-28 px-6 lg:px-12" aria-label="Contactformulier">
+<div class="max-w-screen-2xl mx-auto max-w-2xl">
+<h2 class="font-headline text-4xl tracking-headline text-primary mb-4">Stuur ons een bericht</h2>
+<p class="text-outline mb-10">Vul het formulier in en wij nemen zo snel mogelijk contact met u op.</p>
+<form action="https://formspree.io/f/xpwdjqkl" method="POST" class="space-y-6">
+<div>
+<label for="naam" class="block text-sm font-label text-on-surface-variant mb-2">Naam <span class="text-error">*</span></label>
+<input type="text" id="naam" name="naam" required aria-required="true" class="w-full bg-surface-container border border-outline-variant/20 rounded-lg px-4 py-3 text-on-surface placeholder:text-outline/40 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors" placeholder="Uw volledige naam"/>
+</div>
+<div>
+<label for="email" class="block text-sm font-label text-on-surface-variant mb-2">E-mailadres <span class="text-error">*</span></label>
+<input type="email" id="email" name="email" required aria-required="true" class="w-full bg-surface-container border border-outline-variant/20 rounded-lg px-4 py-3 text-on-surface placeholder:text-outline/40 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors" placeholder="uw@email.nl"/>
+</div>
+<div>
+<label for="telefoon" class="block text-sm font-label text-on-surface-variant mb-2">Telefoonnummer</label>
+<input type="tel" id="telefoon" name="telefoon" class="w-full bg-surface-container border border-outline-variant/20 rounded-lg px-4 py-3 text-on-surface placeholder:text-outline/40 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors" placeholder="06 12345678"/>
+</div>
+<div>
+<label for="type-afspraak" class="block text-sm font-label text-on-surface-variant mb-2">Type afspraak</label>
+<select id="type-afspraak" name="type-afspraak" class="w-full bg-surface-container border border-outline-variant/20 rounded-lg px-4 py-3 text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors">
+<option value="">Selecteer een optie</option>
+<option value="oogmeting">Oogmeting</option>
+<option value="brilreparatie">Brilreparatie</option>
+<option value="contactlenzen">Contactlenzen</option>
+<option value="hoortest">Hoortest</option>
+<option value="anders">Anders</option>
+</select>
+</div>
+<div>
+<label for="bericht" class="block text-sm font-label text-on-surface-variant mb-2">Bericht</label>
+<textarea id="bericht" name="bericht" rows="4" class="w-full bg-surface-container border border-outline-variant/20 rounded-lg px-4 py-3 text-on-surface placeholder:text-outline/40 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors resize-y" placeholder="Uw vraag of opmerking..."></textarea>
+</div>
+<button type="submit" class="hero-gradient text-on-primary px-8 py-4 rounded-lg font-medium text-base transition-all duration-300 hover:shadow-lg hover:shadow-primary-container/20 active:scale-95">Verstuur bericht</button>
+</form>
+</div>
+</section>
+
 <!-- Bedrijfsgegevens -->
-<section class="py-28 px-6 lg:px-12" aria-label="Bedrijfsgegevens">
+<section class="bg-surface-container-low py-28 px-6 lg:px-12" aria-label="Bedrijfsgegevens">
 <div class="max-w-screen-2xl mx-auto max-w-4xl">
 <h2 class="font-headline text-4xl tracking-headline text-primary mb-8">Bedrijfsgegevens</h2>
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -297,12 +335,12 @@ title="Locatie Beeks Zien en Horen op Google Maps">
 </div>
 <div class="space-y-4">
 <h4 class="font-label text-xs uppercase tracking-widest text-primary">Contact</h4>
-<ul class="space-y-3 text-sm">
-<li class="text-outline">Van Bruhezedal 18</li>
-<li class="text-outline">5551 EW Dommelen</li>
-<li><a href="tel:+31402010320" class="text-outline hover:text-primary transition-colors">040 201 0320</a></li>
-<li><a href="mailto:info@zienenhoren.nl" class="text-outline hover:text-primary transition-colors">info@zienenhoren.nl</a></li>
-</ul>
+<address class="not-italic space-y-3 text-sm">
+<p class="text-outline">Van Bruhezedal 18</p>
+<p class="text-outline">5551 EW Dommelen</p>
+<p><a href="tel:+31402010320" class="text-outline hover:text-primary transition-colors">040 201 0320</a></p>
+<p><a href="mailto:info@zienenhoren.nl" class="text-outline hover:text-primary transition-colors">info@zienenhoren.nl</a></p>
+</address>
 </div>
 </div>
 <div class="border-t border-outline-variant/10 px-6 lg:px-12 py-6 max-w-screen-2xl mx-auto">
