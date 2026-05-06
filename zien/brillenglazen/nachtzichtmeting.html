@@ -174,6 +174,9 @@ nav a, footer a { display: inline-flex; align-items: center; }
 <a class="font-headline text-lg tracking-headline text-outline hover:text-primary transition-colors duration-300" href="../../over-ons.html">Over ons</a>
 <a class="font-headline text-lg tracking-headline text-outline hover:text-primary transition-colors duration-300" href="../../contact.html">Contact</a>
 </div>
+<button id="mobile-menu-btn" class="md:hidden flex items-center justify-center w-11 h-11 text-outline hover:text-primary transition-colors duration-300" aria-label="Menu openen" aria-expanded="false" aria-controls="mobile-menu">
+<span class="material-symbols-outlined text-2xl" id="menu-icon">menu</span>
+</button>
 <div class="flex items-center gap-4 lg:gap-6">
 <a href="tel:+31402010320" class="hidden lg:flex items-center gap-2 text-outline hover:text-primary transition-colors duration-300 text-sm">
 <span class="material-symbols-outlined text-base">call</span>
@@ -185,6 +188,19 @@ Afspraak Maken
 </div>
 </div>
 </nav>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="fixed top-[76px] left-0 w-full z-40 bg-surface-container border-b border-outline-variant/20 shadow-xl hidden" role="menu" aria-label="Mobiel menu">
+<div class="flex flex-col px-6 py-6 gap-4">
+<a class="font-headline text-lg tracking-headline text-outline hover:text-primary transition-colors duration-300 py-2" href="../../zien.html">Zien</a>
+<a class="font-headline text-lg tracking-headline text-outline hover:text-primary transition-colors duration-300 py-2" href="../../horen.html">Horen</a>
+<a class="font-headline text-lg tracking-headline text-outline hover:text-primary transition-colors duration-300 py-2" href="../../over-ons.html">Over ons</a>
+<a class="font-headline text-lg tracking-headline text-outline hover:text-primary transition-colors duration-300 py-2" href="../../contact.html">Contact</a>
+<a href="tel:+31402010320" class="flex items-center gap-2 text-outline hover:text-primary transition-colors duration-300 text-sm py-2">
+<span class="material-symbols-outlined text-base">call</span>
+040 201 0320
+</a>
+</div>
+</div>
 </header>
 
 <main id="main-content">
@@ -381,5 +397,29 @@ Afspraak Maken
 </footer>
 
 <script>document.getElementById("copyright-year").textContent = "\u00A9 " + new Date().getFullYear();</script>
+<script>
+(function(){
+  var btn=document.getElementById('mobile-menu-btn');
+  var menu=document.getElementById('mobile-menu');
+  var icon=document.getElementById('menu-icon');
+  if(!btn||!menu||!icon)return;
+  btn.addEventListener('click',function(){
+    var open=!menu.classList.contains('hidden');
+    menu.classList.toggle('hidden');
+    icon.textContent=open?'menu':'close';
+    btn.setAttribute('aria-expanded',open?'false':'true');
+    btn.setAttribute('aria-label',open?'Menu openen':'Menu sluiten');
+  });
+  // Close menu when clicking a link
+  menu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click',function(){
+      menu.classList.add('hidden');
+      icon.textContent='menu';
+      btn.setAttribute('aria-expanded','false');
+      btn.setAttribute('aria-label','Menu openen');
+    });
+  });
+})();
+</script>
 </body>
 </html>
