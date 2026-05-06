@@ -194,18 +194,12 @@ nav a, footer a { display: inline-flex; align-items: center; }
 <header>
 <nav class="fixed top-0 w-full z-50 glass-nav" role="navigation" aria-label="Hoofdnavigatie">
 <div class="flex justify-between items-center px-6 lg:px-12 py-5 w-full max-w-screen-2xl mx-auto">
+<button id="mobile-menu-btn" class="flex items-center justify-center w-11 h-11 text-outline hover:text-primary transition-colors duration-300" aria-label="Menu openen" aria-expanded="false" aria-controls="mobile-menu">
+<span class="material-symbols-outlined text-2xl" id="menu-icon">menu</span>
+</button>
 <a href="index.html" aria-label="Beeks Zien en Horen — Home">
 <img src="logo.png" alt="Beeks Zien en Horen logo" class="h-9 lg:h-10"/>
 </a>
-<div class="hidden md:flex items-center gap-8">
-<a class="font-headline text-lg tracking-headline text-primary border-b-2 border-primary pb-1" href="zien.html">Zien</a>
-<a class="font-headline text-lg tracking-headline text-outline hover:text-primary transition-colors duration-300" href="horen.html">Horen</a>
-<a class="font-headline text-lg tracking-headline text-outline hover:text-primary transition-colors duration-300" href="over-ons.html">Over ons</a>
-<a class="font-headline text-lg tracking-headline text-outline hover:text-primary transition-colors duration-300" href="contact.html">Contact</a>
-</div>
-<button id="mobile-menu-btn" class="md:hidden flex items-center justify-center w-11 h-11 text-outline hover:text-primary transition-colors duration-300" aria-label="Menu openen" aria-expanded="false" aria-controls="mobile-menu">
-<span class="material-symbols-outlined text-2xl" id="menu-icon">menu</span>
-</button>
 <div class="flex items-center gap-4 lg:gap-6">
 <a href="tel:+31402010320" class="hidden lg:flex items-center gap-2 text-outline hover:text-primary transition-colors duration-300 text-sm">
 <span class="material-symbols-outlined text-base">call</span>
